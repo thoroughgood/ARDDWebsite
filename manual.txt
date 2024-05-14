@@ -1,0 +1,8 @@
+This is just to note down how the general structure of nextjs works
+-> App is the home directory
+-> Any folders made in the directory indicate a new route being made
+-> If you want to dynamically route -> [slug]/profile or smth
+
+-> nextjs will route based on url, so if url is xxx/slug/profile -> will route to [slug]/profile
+
+Link -> href = [variable]/profile -> links to the page. no need to pass anything in
