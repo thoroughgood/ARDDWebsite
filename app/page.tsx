@@ -9,6 +9,8 @@ import testImage from '@/public/media/Untitled.png';
 import jettImage from '@/public/media/valorant-jett-abilities-kit-release.jpg';
 import { Badge } from '@/components/ui/badge';
 import RankingBadge from '@/components/rankingBadge';
+import { Accordion } from '@/components/ui/accordion';
+import RankAccordion from '@/components/rankAccordion';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
@@ -20,29 +22,25 @@ export default function Home() {
       <div className="mx-auto flex min-h-screen max-w-screen-xl flex-row">
         <div className="gap flex max-w-60 flex-col gap-5 pt-5">
           <TopicButton
-            currentTopic={topic}
-            topic="routines"
+            isActive={topic === 'routines'}
             onClick={() => setTopic('routines')}
           >
             Routines
           </TopicButton>
           <TopicButton
-            currentTopic={topic}
-            topic="guides"
+            isActive={topic === 'guides'}
             onClick={() => setTopic('guides')}
           >
             Aiming Guide
           </TopicButton>
           <TopicButton
-            currentTopic={topic}
-            topic="rankings"
+            isActive={topic === 'rankings'}
             onClick={() => setTopic('rankings')}
           >
             Aimer Rankings{' '}
           </TopicButton>
           <TopicButton
-            topic="about"
-            currentTopic={topic}
+            isActive={topic === 'about'}
             onClick={() => setTopic('about')}
           >
             {' '}
@@ -76,6 +74,9 @@ export default function Home() {
               Static
             </div>
             <p>What is static?</p>
+            <p>What is static?</p>
+            <p>What is static?</p>
+            <RankAccordion />
           </div>
         )}{' '}
         {topic == 'rankings' && (
