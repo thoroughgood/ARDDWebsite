@@ -18,18 +18,33 @@ export default function Home() {
         ARandomDeadDude's Aim Guide
       </div>
       <div className="mx-auto flex min-h-screen max-w-screen-xl flex-row">
-        <div className="gap flex max-w-60 flex-col gap-5">
-          <TopicButton onClick={() => setTopic('routines')}>
+        <div className="gap flex max-w-60 flex-col gap-5 pt-5">
+          <TopicButton
+            currentTopic={topic}
+            topic="routines"
+            onClick={() => setTopic('routines')}
+          >
             Routines
           </TopicButton>
-          <TopicButton onClick={() => setTopic('guides')}>
-            {' '}
-            Aiming Guides{' '}
+          <TopicButton
+            currentTopic={topic}
+            topic="guides"
+            onClick={() => setTopic('guides')}
+          >
+            Aiming Guide
           </TopicButton>
-          <TopicButton onClick={() => setTopic('rankings')}>
+          <TopicButton
+            currentTopic={topic}
+            topic="rankings"
+            onClick={() => setTopic('rankings')}
+          >
             Aimer Rankings{' '}
           </TopicButton>
-          <TopicButton onClick={() => setTopic('about')}>
+          <TopicButton
+            topic="about"
+            currentTopic={topic}
+            onClick={() => setTopic('about')}
+          >
             {' '}
             About{' '}
           </TopicButton>
@@ -55,7 +70,14 @@ export default function Home() {
             </DropdownButton>
           </div>
         )}
-        {topic == 'guides' && <>Guides test</>}{' '}
+        {topic == 'guides' && (
+          <div className="flex w-full flex-col pl-6">
+            <div className="text-white font-bold text-3xl">
+              Static
+            </div>
+            <p>What is static?</p>
+          </div>
+        )}{' '}
         {topic == 'rankings' && (
           <div className="flex w-full flex-col pl-3">
             {/* Create separate divs for each tier */}

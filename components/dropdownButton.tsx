@@ -32,7 +32,7 @@ export default function DropdownButton({
   return (
     <>
       <Accordion
-        className="rounded-2xl bg-cover shadow-lg"
+        className="rounded-2xl bg-cover shadow-md shadow-stone-900"
         type="single"
         collapsible
       >
