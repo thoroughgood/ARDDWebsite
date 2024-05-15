@@ -1,4 +1,4 @@
-// File: /home/tez/Desktop/ARDDWebsite/app/layout.tsx
+// File: /home/tez/Desktop/test/ARDDWebsite/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
