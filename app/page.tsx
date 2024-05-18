@@ -13,11 +13,11 @@ export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
   return (
-    <main className="w-full bg-stone-700 p-24">
+    <main className="w-full bg-stone-700 p-24 min-h-screen">
       <div className="flex w-full justify-center pb-5 text-5xl font-bold text-black">
         ARandomDeadDude's Aim Guide
       </div>
-      <div className="mx-auto flex min-h-screen max-w-screen-xl flex-row">
+      <div className="mx-auto flex max-w-screen-xl flex-row">
         <div className="gap flex max-w-60 flex-col gap-5">
           <TopicButton onClick={() => setTopic('routines')}>
             Routines
@@ -35,25 +35,45 @@ export default function Home() {
           </TopicButton>
         </div>
         {topic == 'routines' && (
-          <div className="flex w-full flex-col gap-5 pl-3">
-            <div className="flex w-full justify-start pl-3">
-              <Badge className="bg">
+          <>
+            <div className="flex flex-row gap-5 max-w-screen flex-wrap pl-3">
+              <Badge className="bg max-h-12">
                 <h1 className="text-2xl font-bold text-gray-300">
                   Peaked
                 </h1>
               </Badge>
+              <div className="flex flex-row flex-wrap gap-5 pl-3">
+                <DropdownButton
+                  uid="1"
+                  type="Static"
+                  content={jettImage.src}
+                >
+                  <p> Default Valorant Playlist </p>
+                </DropdownButton>
+                <DropdownButton uid="2" type="Flick">
+                  Dapr Valorant Playlist
+                </DropdownButton>
+                <DropdownButton uid="3" type="Test">
+                  Dapr Valorant Playlist
+                </DropdownButton>
+                <DropdownButton uid="4" type="Flick">
+                  Dapr Valorant Playlist
+                </DropdownButton>
+                <DropdownButton uid="5" type="Flick">
+                  Dapr Valorant Playlist
+                </DropdownButton>
+                <DropdownButton uid="6" type="Flick">
+                  Dapr Valorant Playlist
+                </DropdownButton>
+                <DropdownButton uid="7" type="Flick">
+                  Dapr Valorant Playlist
+                </DropdownButton>
+                <DropdownButton uid="8" type="Flick">
+                  Dapr Valorant Playlist
+                </DropdownButton>
+              </div>
             </div>
-
-            <DropdownButton type="Static" content={jettImage.src}>
-              <p> Default Valorant Playlist </p>
-              <p>This is the type of playlist</p>
-              <p>Hey</p>
-              <p> This is a test paragraph! </p>
-            </DropdownButton>
-            <DropdownButton type="Flick">
-              Dapr Valorant Playlist
-            </DropdownButton>
-          </div>
+          </>
         )}
         {topic == 'guides' && <>Guides test</>}{' '}
         {topic == 'rankings' && (
