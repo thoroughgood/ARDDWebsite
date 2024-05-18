@@ -83,8 +83,7 @@ export default function RankAccordion() {
             </AccordionTrigger>
           </div>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+            This is grandmaster-nova guide!
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
