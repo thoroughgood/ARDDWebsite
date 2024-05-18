@@ -10,6 +10,7 @@ import jettImage from '@/public/media/valorant-jett-abilities-kit-release.jpg';
 import { Badge } from '@/components/ui/badge';
 import RankingBadge from '@/components/rankingBadge';
 import { Accordion } from '@/components/ui/accordion';
+import RoutineCard from '@/components/routineCard';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
@@ -37,47 +38,52 @@ export default function Home() {
         </div>
         {topic == 'routines' && (
           <>
-            <div className="flex flex-row gap-5 max-w-screen flex-wrap pl-3">
+            <div className="flex flex-row gap-5 max-w-screen flex-wrap pl-4">
               <Badge className="bg max-h-12">
                 <h1 className="text-2xl font-bold text-gray-300">
                   Peaked
                 </h1>
               </Badge>
+              <div className="flex flex-row flex-wrap gap-5 pl-5">
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+              </div>
+              <Separator className="bg-stone-800/80 ml-3 w-[96%]" />
+              <Badge className="bg max-h-12">
+                <h1 className="text-2xl font-bold text-gray-300">
+                  Good
+                </h1>
+              </Badge>
               <div className="flex flex-row flex-wrap gap-5 pl-3">
-                <Accordion
-                  className="rounded bg-cover flex flex-row flex-wrap gap-5"
-                  type="single"
-                  collapsible
-                >
-                  <DropdownButton
-                    uid="1"
-                    type="Static"
-                    content={jettImage.src}
-                  >
-                    <p> Default Valorant Playlist </p>
-                  </DropdownButton>
-                  <DropdownButton uid="2" type="Flick">
-                    Dapr Valorant Playlist
-                  </DropdownButton>
-                  <DropdownButton uid="3" type="Test">
-                    Dapr Valorant Playlist
-                  </DropdownButton>
-                  <DropdownButton uid="4" type="Flick">
-                    Dapr Valorant Playlist
-                  </DropdownButton>
-                  <DropdownButton uid="5" type="Flick">
-                    Dapr Valorant Playlist
-                  </DropdownButton>
-                  <DropdownButton uid="6" type="Flick">
-                    Dapr Valorant Playlist
-                  </DropdownButton>
-                  <DropdownButton uid="7" type="Flick">
-                    Dapr Valorant Playlist
-                  </DropdownButton>
-                  <DropdownButton uid="8" type="Flick">
-                    Dapr Valorant Playlist
-                  </DropdownButton>
-                </Accordion>
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>{' '}
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
+                <RoutineCard type="flex" content={jettImage.src}>
+                  Default VAL Playlist
+                </RoutineCard>
               </div>
             </div>
           </>
