@@ -51,11 +51,11 @@ export default function RoutineCard({
             {result[0]}
           </HoverCardTrigger>
         </div>
-        <HoverCardContent className="rounded-2xl ">
+        <HoverCardContent className="rounded-2xl bg-stone-900 shadow-xl border-none">
           {/* To make adding content easier for glenn */}
-          <div className="text-black p-5"> Type is: {type}</div>
+          <div className="text-white p-5"> Type is: {type}</div>
           {result.map((value, index) => (
-            <p className="text-black p-5" key={index}>
+            <p className="text-white p-5" key={index}>
               {' '}
               {value}{' '}
             </p>

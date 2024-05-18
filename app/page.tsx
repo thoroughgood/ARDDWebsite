@@ -45,13 +45,13 @@ export default function Home() {
                 </h1>
               </Badge>
               <div className="flex flex-row flex-wrap gap-5 pl-5">
-                <RoutineCard type="flex" content={jettImage.src}>
+                <RoutineCard type="flex">
                   Default VAL Playlist
                 </RoutineCard>
                 <RoutineCard type="flex" content={jettImage.src}>
                   Default VAL Playlist
                 </RoutineCard>
-                <RoutineCard type="flex" content={jettImage.src}>
+                <RoutineCard type="flex">
                   Default VAL Playlist
                 </RoutineCard>
                 <RoutineCard type="flex" content={jettImage.src}>
