@@ -60,10 +60,42 @@ export default function RankAccordion() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>
             Yes. It&apos;s animated by default, but you can disable it
             if you prefer.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-6">
+          <div className="z-0 rounded-2xl bg-purple-300/60">
+            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
+              Jade - Master
+            </AccordionTrigger>
+          </div>
+          <AccordionContent>
+            Yes. It comes with default styles that matches the other
+            components&apos; aesthetic.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-4">
+          <div className="z-0 rounded-2xl bg-orange-300/40">
+            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
+              Grandmaster - Nova
+            </AccordionTrigger>
+          </div>
+          <AccordionContent>
+            Yes. It comes with default styles that matches the other
+            components&apos; aesthetic.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-5">
+          <div className="z-0 rounded-2xl bg-rose-500/50">
+            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
+              Nova++
+            </AccordionTrigger>
+          </div>
+          <AccordionContent>
+            Yes. It comes with default styles that matches the other
+            components&apos; aesthetic.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
