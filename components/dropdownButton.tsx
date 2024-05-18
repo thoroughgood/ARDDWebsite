@@ -33,44 +33,38 @@ export default function DropdownButton({
   /* If no image passed set default background */
   return (
     <>
-      <Accordion
-        className="rounded-2xl bg-cover shadow-lg"
-        type="single"
-        collapsible
-      >
-        <AccordionItem value={uid}>
-          <div
-            className="z-10 rounded-2xl"
-            /* If there is an image, set it, else use default colour */
-            style={
-              content
-                ? {
-                    backgroundImage: `url(${content})`,
-                    backgroundSize: '100% 400%',
-                    backgroundRepeat: 'no-repeat',
-                  }
-                : {
-                    backgroundColor:
-                      'rgb(28 25 23 / var(--tw-bg-opacity))',
-                  }
-            }
-          >
-            <AccordionTrigger className="z-0 rounded-2xl p-5 font-sans text-xl font-bold text-white">
-              {result[0]}
-            </AccordionTrigger>
-          </div>
-          <AccordionContent className="rounded-2xl ">
-            {/* To make adding content easier for glenn */}
-            <div className="text-white p-5"> Type is: {type}</div>
-            {result.map((value, index) => (
-              <p className="text-white p-5" key={index}>
-                {' '}
-                {value}{' '}
-              </p>
-            ))}
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <AccordionItem value={uid}>
+        <div
+          className="z-10 rounded-2xl"
+          /* If there is an image, set it, else use default colour */
+          style={
+            content
+              ? {
+                  backgroundImage: `url(${content})`,
+                  backgroundSize: '100% 400%',
+                  backgroundRepeat: 'no-repeat',
+                }
+              : {
+                  backgroundColor:
+                    'rgb(28 25 23 / var(--tw-bg-opacity))',
+                }
+          }
+        >
+          <AccordionTrigger className="z-0 rounded-2xl p-5 font-sans text-xl font-bold text-white">
+            {result[0]}
+          </AccordionTrigger>
+        </div>
+        <AccordionContent className="rounded-2xl border-x bord border-black">
+          {/* To make adding content easier for glenn */}
+          <div className="text-white p-5"> Type is: {type}</div>
+          {result.map((value, index) => (
+            <p className="text-white p-5" key={index}>
+              {' '}
+              {value}{' '}
+            </p>
+          ))}
+        </AccordionContent>
+      </AccordionItem>
     </>
   );
 }

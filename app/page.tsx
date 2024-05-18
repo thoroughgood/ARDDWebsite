@@ -9,6 +9,7 @@ import testImage from '@/public/media/Untitled.png';
 import jettImage from '@/public/media/valorant-jett-abilities-kit-release.jpg';
 import { Badge } from '@/components/ui/badge';
 import RankingBadge from '@/components/rankingBadge';
+import { Accordion } from '@/components/ui/accordion';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
@@ -43,34 +44,40 @@ export default function Home() {
                 </h1>
               </Badge>
               <div className="flex flex-row flex-wrap gap-5 pl-3">
-                <DropdownButton
-                  uid="1"
-                  type="Static"
-                  content={jettImage.src}
+                <Accordion
+                  className="rounded bg-cover flex flex-row flex-wrap gap-5"
+                  type="single"
+                  collapsible
                 >
-                  <p> Default Valorant Playlist </p>
-                </DropdownButton>
-                <DropdownButton uid="2" type="Flick">
-                  Dapr Valorant Playlist
-                </DropdownButton>
-                <DropdownButton uid="3" type="Test">
-                  Dapr Valorant Playlist
-                </DropdownButton>
-                <DropdownButton uid="4" type="Flick">
-                  Dapr Valorant Playlist
-                </DropdownButton>
-                <DropdownButton uid="5" type="Flick">
-                  Dapr Valorant Playlist
-                </DropdownButton>
-                <DropdownButton uid="6" type="Flick">
-                  Dapr Valorant Playlist
-                </DropdownButton>
-                <DropdownButton uid="7" type="Flick">
-                  Dapr Valorant Playlist
-                </DropdownButton>
-                <DropdownButton uid="8" type="Flick">
-                  Dapr Valorant Playlist
-                </DropdownButton>
+                  <DropdownButton
+                    uid="1"
+                    type="Static"
+                    content={jettImage.src}
+                  >
+                    <p> Default Valorant Playlist </p>
+                  </DropdownButton>
+                  <DropdownButton uid="2" type="Flick">
+                    Dapr Valorant Playlist
+                  </DropdownButton>
+                  <DropdownButton uid="3" type="Test">
+                    Dapr Valorant Playlist
+                  </DropdownButton>
+                  <DropdownButton uid="4" type="Flick">
+                    Dapr Valorant Playlist
+                  </DropdownButton>
+                  <DropdownButton uid="5" type="Flick">
+                    Dapr Valorant Playlist
+                  </DropdownButton>
+                  <DropdownButton uid="6" type="Flick">
+                    Dapr Valorant Playlist
+                  </DropdownButton>
+                  <DropdownButton uid="7" type="Flick">
+                    Dapr Valorant Playlist
+                  </DropdownButton>
+                  <DropdownButton uid="8" type="Flick">
+                    Dapr Valorant Playlist
+                  </DropdownButton>
+                </Accordion>
               </div>
             </div>
           </>
