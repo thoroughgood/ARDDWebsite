@@ -45,7 +45,10 @@ export default function Home() {
                 </h1>
               </Badge>
               <div className="flex flex-row flex-wrap gap-5 pl-5">
-                <RoutineCard link="https://google.com" type="kovaaks">
+                <RoutineCard
+                  link="https://go.aimlab.gg/v1/redirects?link=aimlab%3a%2f%2fworkshop%3fid%3d2916614100%26source%3d7D4B496234CF1774&link=steam%3a%2f%2frungameid%2f714010"
+                  type="kovaaks"
+                >
                   ARDD
                 </RoutineCard>
                 <RoutineCard

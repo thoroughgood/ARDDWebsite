@@ -34,7 +34,7 @@ export default function RoutineCard({
     <>
       <HoverCard>
         <div
-          className={`z-10 rounded-2xl max-h-screen-lg shadow-lg border border-orange-800 max-w-screen-lg ${type === 'kovaaks' ? 'shadow-orange-800' : 'shadow-blue-200'}`}
+          className={`z-10 rounded-2xl max-h-screen-lg shadow-lg border border-orange-800 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800 border' : 'border-blue-500 brightness-110 border'}`}
           /* If there is an image, set it, else use default colour */
         >
           <HoverCardTrigger className="flex justify-content align-middle z-0 rounded-2xl p-5 font-sans text-xl font-bold text-white">
@@ -42,7 +42,7 @@ export default function RoutineCard({
           </HoverCardTrigger>
         </div>
         <HoverCardContent
-          className={`flex  justify-center rounded-2xl brightness-7 p-0 shadow-md border-none ${type === 'kovaaks' ? 'bg-orange-300 shadow-orange-200' : 'bg-blue-300 shadow-blue-200'}`}
+          className={`flex justify-center rounded-2xl brightness-7 p-0 shadow-md border-none ${type === 'kovaaks' ? 'bg-orange-300 shadow-orange-200' : 'bg-blue-300 shadow-blue-200'}`}
         >
           {/* To make adding content easier for glenn */}
           <div className="text-white p-5">
