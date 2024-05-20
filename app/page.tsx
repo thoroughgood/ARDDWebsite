@@ -45,17 +45,25 @@ export default function Home() {
                 </h1>
               </Badge>
               <div className="flex flex-row flex-wrap gap-5 pl-5">
-                <RoutineCard type="flex">
-                  Default VAL Playlist
+                <RoutineCard link="https://google.com" type="kovaaks">
+                  ARDD
                 </RoutineCard>
-                <RoutineCard type="flex" content={jettImage.src}>
-                  Default VAL Playlist
+                <RoutineCard
+                  link="https://youtube.com"
+                  type="flex"
+                  content={jettImage.src}
+                >
+                  Cartoonz
                 </RoutineCard>
-                <RoutineCard type="flex">
-                  Default VAL Playlist
+                <RoutineCard link="https://aimlabs.com" type="flex">
+                  DAPR
                 </RoutineCard>
-                <RoutineCard type="flex" content={jettImage.src}>
-                  Default VAL Playlist
+                <RoutineCard
+                  link="https://kovaaks.com"
+                  type="flex"
+                  content={jettImage.src}
+                >
+                  YAY
                 </RoutineCard>
 
                 <RoutineCard type="flex" content={jettImage.src}>
