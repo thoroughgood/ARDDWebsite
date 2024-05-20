@@ -34,7 +34,7 @@ export default function RoutineCard({
     <>
       <HoverCard>
         <div
-          className="z-10 rounded-2xl max-h-screen-lg max-w-screen-lg"
+          className={`z-10 rounded-2xl max-h-screen-lg shadow-md max-w-screen-lg ${type === 'kovaaks' ? 'shadow-orange-200' : 'shadow-blue-200'}`}
           /* If there is an image, set it, else use default colour */
           style={
             content
@@ -59,7 +59,7 @@ export default function RoutineCard({
           {/* To make adding content easier for glenn */}
           <div className="text-white p-5">
             <a href={`${link}`}>
-              {type === 'kovaaks' ? <>Kovaaks</> : <>Aimlabs</>}
+              ~{type === 'kovaaks' ? <>Kovaaks</> : <>Aimlabs</>}
               <svg
                 width="15"
                 height="15"
