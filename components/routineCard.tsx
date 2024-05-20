@@ -34,20 +34,8 @@ export default function RoutineCard({
     <>
       <HoverCard>
         <div
-          className={`z-10 rounded-2xl max-h-screen-lg shadow-md max-w-screen-lg ${type === 'kovaaks' ? 'shadow-orange-200' : 'shadow-blue-200'}`}
+          className={`z-10 rounded-2xl max-h-screen-lg shadow-lg border border-orange-800 max-w-screen-lg ${type === 'kovaaks' ? 'shadow-orange-800' : 'shadow-blue-200'}`}
           /* If there is an image, set it, else use default colour */
-          style={
-            content
-              ? {
-                  backgroundImage: `url(${content})`,
-                  backgroundSize: '100% 400%',
-                  backgroundRepeat: 'no-repeat',
-                }
-              : {
-                  backgroundColor:
-                    'rgb(28 25 23 / var(--tw-bg-opacity))',
-                }
-          }
         >
           <HoverCardTrigger className="flex justify-content align-middle z-0 rounded-2xl p-5 font-sans text-xl font-bold text-white">
             {result[0]}
