@@ -16,7 +16,7 @@ export default function Home() {
   const [topic, setTopic] = useState('routines');
   return (
     <main className="w-full bg-stone-700 p-24 min-h-screen">
-      <div className="flex w-full justify-center pb-5 text-5xl font-bold text-black">
+      <div className="flex w-full justify-center pb-5 text-5xl font-bold text-white">
         ARandomDeadDude's Aim Guide
       </div>
       <div className="mx-auto flex max-w-screen-xl flex-row">
@@ -38,8 +38,8 @@ export default function Home() {
         </div>
         {topic == 'routines' && (
           <>
-            <div className="flex flex-row gap-5 max-w-screen flex-wrap pl-4">
-              <Badge className="bg max-h-12">
+            <div className="flex flex-col gap-5 flex-wrap pl-4">
+              <Badge className="bg-green-600 w-[113px] max-h-12">
                 <h1 className="text-2xl font-bold text-gray-300">
                   Peaked
                 </h1>
@@ -53,7 +53,7 @@ export default function Home() {
                 </RoutineCard>
                 <RoutineCard
                   link="https://youtube.com"
-                  type="flex"
+                  type="aimlabs"
                   content={jettImage.src}
                 >
                   Cartoonz
@@ -63,21 +63,14 @@ export default function Home() {
                 </RoutineCard>
                 <RoutineCard
                   link="https://kovaaks.com"
-                  type="flex"
+                  type="kovaaks"
                   content={jettImage.src}
                 >
                   YAY
                 </RoutineCard>
-
-                <RoutineCard type="flex" content={jettImage.src}>
-                  Default VAL Playlist
-                </RoutineCard>
-                <RoutineCard type="flex" content={jettImage.src}>
-                  Default VAL Playlist
-                </RoutineCard>
               </div>
               <Separator className="bg-stone-800/80 ml-3 w-[96%]" />
-              <Badge className="bg max-h-12">
+              <Badge className="bg-pink-300 max-h-12 w-[90px]">
                 <h1 className="text-2xl font-bold text-gray-300">
                   Good
                 </h1>
