@@ -17,8 +17,8 @@ export default function TopicButton({
   const [isHovered, setIsHovered] = useState(false);
   return (
     <Button
-      className={`bg-stone-900 p-6 font-sans text-xl font-bold shadow-lg duration-1000 ease-in-out hover:scale-105 ${
-        isActive ? 'bg-blue-950' : ''
+      className={`bg-stone-800 p-6 font-sans text-xl font-bold shadow-lg duration-1000 ease-in-out hover:bg-stone-900 hover:scale-105 ${
+        isActive ? 'bg-black' : ''
       }`}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
