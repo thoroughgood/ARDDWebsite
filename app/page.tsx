@@ -79,7 +79,33 @@ export default function Home() {
             <Tier rank="C">test</Tier>
           </div>
         )}
-        {topic == 'about' && <>about me</>}
+        {topic == 'about' && (
+          <>
+            <div className="flex flex-col">
+              <div className="ml-5 text-white font-bold text-3xl">
+                Achievements
+                <div className="bg-stone-600 rounded-lg shadow-lg ">
+                  Hey This Is achievmeents howwohwoh
+                </div>
+              </div>
+              <div className="ml-5 text-white font-bold text-3xl">
+                Players Coached
+                <div className="bg-stone-600 rounded-lg shadow-lg flex-row flex-wrap">
+                  <div className="flex flex-col w-48">
+                    This is dapr
+                    <Badge>DAPR</Badge>
+                  </div>{' '}
+                  {/* Insert images associated with players as well */}
+                  <Badge>DAPR</Badge>
+                  <Badge>DAPR</Badge>
+                  <Badge>DAPR</Badge>
+                  <Badge>DAPR</Badge>
+                  <Badge>DAPR</Badge>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </main>
   );
