@@ -23,17 +23,13 @@ export default function RoutineCard({
 }: routineCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
-  const buttonStyle: React.CSSProperties = {
-    transition: 'all 0.3s ease-in-out',
-    transform: isHovered ? 'scale(1.1)' : 'scale(1)',
-  };
   /* Convert children objects into array */
   const result = Children.toArray(children);
   /* If no image passed set default background */
   return (
     <>
       <Button
-        className={`z-10 rounded-2xl max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800 border hover:bg-amber-700' : 'border-blue-500 brightness-110 border hover:bg-sky-700'}`}
+        className={`z-10 rounded-2xl duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800 border hover:bg-amber-700' : 'border-blue-500 brightness-110 border hover:bg-sky-700'}`}
       >
         <a href={`${link}`}>{result[0]}</a>{' '}
         <svg
