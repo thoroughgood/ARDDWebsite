@@ -15,7 +15,7 @@ export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
   return (
-    <main className="w-full bg-stone-700 p-24 min-h-screen">
+    <main className="w-full bg-stone-900 p-24 min-h-screen">
       <div className="flex w-full justify-center pb-5 text-5xl font-bold text-white">
         ARandomDeadDude's Aim Guide
       </div>
