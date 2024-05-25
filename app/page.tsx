@@ -15,7 +15,7 @@ export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
   return (
-    <main className="w-full bg-stone-900 p-24 min-h-screen">
+    <main className="w-full bg-neutral-900 p-24 min-h-screen">
       <div className="flex w-full justify-center pb-5 text-5xl font-bold text-white">
         ARandomDeadDude's Aim Guide
       </div>
@@ -69,7 +69,7 @@ export default function Home() {
                   YAY
                 </RoutineCard>
               </div>
-              <Separator className="bg-stone-800/80 ml-3 w-[96%]" />
+              <Separator className="bg-white ml-3 w-[96%]" />
               <Badge className="bg-pink-300 max-h-12 w-[90px]">
                 <h1 className="text-2xl font-bold text-gray-300">
                   Good

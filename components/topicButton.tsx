@@ -21,7 +21,7 @@ export default function TopicButton({
   console.log(isHovered);
   return (
     <Button
-      className="bg-black p-6 font-sans text-xl font-bold shadow-lg duration-1000 ease-in-out hover:scale-105"
+      className="p-6 bg-neutral-800 font-sans text-xl font-bold shadow-lg duration-1000 ease-in-out hover:scale-105"
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
       onClick={onClick}
