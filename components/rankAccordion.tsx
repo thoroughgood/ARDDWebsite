@@ -25,38 +25,46 @@ export default function RankAccordion() {
   return (
     <>
       <Accordion
-        className="rounded-2xl bg-cover shadow-stone-900"
+        className="rounded-2xl bg-cover shadow-md shadow-stone-900"
         type="single"
         collapsible
       >
         <AccordionItem value="item-1">
-          <div className="z-0 rounded-2xl bg-yellow-300/40">
-            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
+          <div className="z-0 bg-yellow-300/40 rounded-t-2xl shadow-md shadow-black">
+            <AccordionTrigger className="z-0 flex justify-center font-sans text-xl font-bold text-white">
               Iron - Gold
             </AccordionTrigger>
           </div>
-          <AccordionContent className="shadow-black shadow-md mx-3 bg-stone-00/40">
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
-            <p>Here are some specific things!</p>
+          <AccordionContent className="border-x bg-stone-00/40">
+            tablished fact that a reader will be distracted by the
+            readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using
+            'Content here, content here', making it look like readable
+            English. Many desktop publishing packages and web page
+            editors now use Lorem Ipsum as their default model text,
+            and a search for 'lorem ipsum' will uncover many web sites
+            still in their infancy. Various versio
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <div className="z-0 rounded-2xl bg-teal-300/40">
+          <div className="z-0 shadow-md shadow-black bg-teal-300/40">
             <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
               Plat - Diamond
             </AccordionTrigger>
           </div>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+            tablished fact that a reader will be distracted by the
+            readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using
+            'Content here, content here', making it look like readable
+            English. Many desktop publishing packages and web page
+            editors now use Lorem Ipsum as their default model text,
+            and a search for 'lorem ipsum' will uncover many web sites
+            still in their infancy. Various versioes. It comes with
+            default styles that matches the other components&apos;
+            aesthetic.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
@@ -66,35 +74,56 @@ export default function RankAccordion() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-6">
-          <div className="z-0 rounded-2xl bg-purple-300/60">
+          <div className="z-0 shadow-md shadow-black bg-purple-300/60">
             <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
               Jade - Master
             </AccordionTrigger>
           </div>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+            Ytablished fact that a reader will be distracted by the
+            readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using
+            'Content here, content here', making it look like readable
+            English. Many desktop publishing packages and web page
+            editors now use Lorem Ipsum as their default model text,
+            and a search for 'lorem ipsum' will uncover many web sites
+            still in their infancy. Various versioic.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <div className="z-0 rounded-2xl bg-orange-300/40">
+          <div className="z-0 shadow-md shadow-black bg-orange-300/40">
             <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
               Grandmaster - Nova
             </AccordionTrigger>
           </div>
           <AccordionContent>
-            This is grandmaster-nova guide!
+            tablished fact that a reader will be distracted by the
+            readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using
+            'Content here, content here', making it look like readable
+            English. Many desktop publishing packages and web page
+            editors now use Lorem Ipsum as their default model text,
+            and a search for 'lorem ipsum' will uncover many web sites
+            still in their infancy. Various versioe!
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
-          <div className="z-0 rounded-2xl bg-rose-500/50">
+          <div className="z-0 rounded-b-2xl shadow-md shadow-black bg-rose-500/50">
             <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
               Nova++
             </AccordionTrigger>
           </div>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived not only five
+            centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the
+            1960s with the release of Letraset sheets containing Lore
           </AccordionContent>
         </AccordionItem>
       </Accordion>
