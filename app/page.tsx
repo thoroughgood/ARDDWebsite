@@ -32,17 +32,29 @@ export default function Home() {
         </div>
         <div className="mx-auto flex max-w-screen-xl flex-row">
           <div className="gap flex max-w-60 flex-col gap-5">
-            <TopicButton onClick={() => setTopic('routines')}>
+            <TopicButton
+              onClick={() => setTopic('routines')}
+              isActive={topic === 'routines'}
+            >
               Routines
             </TopicButton>
-            <TopicButton onClick={() => setTopic('guides')}>
+            <TopicButton
+              onClick={() => setTopic('guides')}
+              isActive={topic === 'guides'}
+            >
               {' '}
               Aiming Guides{' '}
             </TopicButton>
-            <TopicButton onClick={() => setTopic('rankings')}>
+            <TopicButton
+              onClick={() => setTopic('rankings')}
+              isActive={topic === 'rankings'}
+            >
               Aimer Rankings{' '}
             </TopicButton>
-            <TopicButton onClick={() => setTopic('about')}>
+            <TopicButton
+              onClick={() => setTopic('about')}
+              isActive={topic === 'about'}
+            >
               {' '}
               About{' '}
             </TopicButton>
@@ -108,16 +120,19 @@ export default function Home() {
                 <div className="text-white font-bold text-3xl">
                   Static
                 </div>
-                tablished fact that a reader will be distracted by the
-                readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a
-                more-or-less normal distribution of letters, as
-                opposed to using 'Content here, content here', making
-                it look like readable English. Many desktop publishing
-                packages and web page editors now use Lorem Ipsum as
-                their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their
-                infancy. Various versio
+                <div className="text-white">
+                  tablished fact that a reader will be distracted by
+                  the readable content of a page when looking at its
+                  layout. The point of using Lorem Ipsum is that it
+                  has a more-or-less normal distribution of letters,
+                  as opposed to using 'Content here, content here',
+                  making it look like readable English. Many desktop
+                  publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a
+                  search for 'lorem ipsum' will uncover many web sites
+                  still in their infancy. Various versio
+                </div>
+
                 <RankAccordion />
               </div>
             </>
