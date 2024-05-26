@@ -29,7 +29,7 @@ export default function RoutineCard({
   return (
     <>
       <Button
-        className={`z-10 rounded-2xl duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800 border hover:bg-amber-700' : 'border-blue-500 brightness-110 border hover:bg-sky-700'}`}
+        className={`z-10 rounded-2xl duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800/60 border hover:bg-amber-700' : 'border-blue-500/60 brightness-110 border hover:bg-sky-700'}`}
       >
         <a href={`${link}`}>{result[0]}</a>{' '}
         <svg
@@ -50,3 +50,4 @@ export default function RoutineCard({
     </>
   );
 }
+
