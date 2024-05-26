@@ -13,6 +13,7 @@ import { Accordion } from '@/components/ui/accordion';
 import RankAccordion from '@/components/rankAccordion';
 import RoutineCard from '@/components/routineCard';
 import Background from '@/public/media/background.jpg';
+import ReactCard from '@/components/reactCardFlip';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
@@ -150,10 +151,9 @@ export default function Home() {
               <div className="flex flex-col">
                 <div className="ml-5 text-white font-bold text-3xl">
                   Achievements
-                  <div className="bg-stone-600 rounded-lg shadow-lg ">
-                    Hey This Is achievmeents howwohwoh
-                  </div>
+                  <div className="bg-stone-600 rounded-lg shadow-lg "></div>
                 </div>
+
                 <div className="ml-5 text-white font-bold text-3xl">
                   Players Coached
                   <div className="bg-stone-600 rounded-lg shadow-lg flex-row flex-wrap">
@@ -169,6 +169,7 @@ export default function Home() {
                     <Badge>DAPR</Badge>
                   </div>
                 </div>
+                <ReactCard />
               </div>
             </>
           )}
