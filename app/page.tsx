@@ -10,6 +10,7 @@ import jettImage from '@/public/media/valorant-jett-abilities-kit-release.jpg';
 import { Badge } from '@/components/ui/badge';
 import RankingBadge from '@/components/rankingBadge';
 import { Accordion } from '@/components/ui/accordion';
+import RankAccordion from '@/components/rankAccordion';
 import RoutineCard from '@/components/routineCard';
 import Background from '@/public/media/background.jpg';
 export default function Home() {
@@ -101,7 +102,26 @@ export default function Home() {
               </div>
             </>
           )}
-          {topic == 'guides' && <>Guides test</>}{' '}
+          {topic == 'guides' && (
+            <>
+              <div className="flex w-full flex-col pl-6">
+                <div className="text-white font-bold text-3xl">
+                  Static
+                </div>
+                tablished fact that a reader will be distracted by the
+                readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a
+                more-or-less normal distribution of letters, as
+                opposed to using 'Content here, content here', making
+                it look like readable English. Many desktop publishing
+                packages and web page editors now use Lorem Ipsum as
+                their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their
+                infancy. Various versio
+                <RankAccordion />
+              </div>
+            </>
+          )}{' '}
           {topic == 'rankings' && (
             <div className="flex w-full flex-col pl-3">
               {/* Create separate divs for each tier */}
@@ -131,4 +151,3 @@ export default function Home() {
     </div>
   );
 }
-
