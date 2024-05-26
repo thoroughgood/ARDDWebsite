@@ -3,8 +3,6 @@
 import React, { Children, useState } from 'react';
 import { Button } from './ui/button';
 
-
-
 interface routineCardProps {
   children: React.ReactNode; // Corrected type to React.ReactNode
   content?: string | undefined;
@@ -17,16 +15,17 @@ export default function RoutineCard({
   type,
   link,
 }: routineCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
   /* Convert children objects into array */
   const result = Children.toArray(children);
   /* If no image passed set default background */
   return (
     <>
       <Button
-        className={`z-10 rounded-2xl duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800/60 border hover:bg-amber-700' : 'border-blue-500/60 brightness-110 border hover:bg-sky-700'}`}
+        className={`z-10 rounded-2xl h-12 duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800/60 border hover:bg-amber-700' : 'border-blue-500/60 brightness-110 border hover:bg-sky-700'}`}
       >
-        <a href={`${link}`}>{result[0]}</a>{' '}
+        <a className="px-1" href={`${link}`}>
+          {result[0]}
+        </a>
         <svg
           width="15"
           height="15"
