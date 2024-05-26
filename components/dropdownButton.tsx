@@ -12,13 +12,15 @@ import {
 interface contentButtonProps {
   children: React.ReactNode; // Corrected type to React.ReactNode
   content?: string | undefined;
-  type: String;
+  type: string;
+  uid: string;
 }
 
 export default function DropdownButton({
   children,
   content,
   type,
+  uid,
 }: contentButtonProps) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -32,11 +34,11 @@ export default function DropdownButton({
   return (
     <>
       <Accordion
-        className="rounded-2xl bg-cover shadow-md shadow-stone-900"
+        className="rounded bg-cover flex flex-row flex-wrap gap-5"
         type="single"
         collapsible
       >
-        <AccordionItem value="item-1">
+        <AccordionItem value={uid}>
           <div
             className="z-10 rounded-2xl"
             /* If there is an image, set it, else use default colour */
@@ -57,7 +59,7 @@ export default function DropdownButton({
               {result[0]}
             </AccordionTrigger>
           </div>
-          <AccordionContent className="rounded-2xl ">
+          <AccordionContent className="rounded-2xl border-x bord border-black">
             {/* To make adding content easier for glenn */}
             <div className="text-white p-5"> Type is: {type}</div>
             {result.map((value, index) => (
