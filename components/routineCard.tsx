@@ -2,11 +2,8 @@
 'use client';
 import React, { Children, useState } from 'react';
 import { Button } from './ui/button';
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from '@/components/ui/hover-card';
+
+
 
 interface routineCardProps {
   children: React.ReactNode; // Corrected type to React.ReactNode
@@ -14,7 +11,6 @@ interface routineCardProps {
   type: String;
   link: String;
 }
-
 export default function RoutineCard({
   children,
   content,
@@ -22,7 +18,6 @@ export default function RoutineCard({
   link,
 }: routineCardProps) {
   const [isHovered, setIsHovered] = useState(false);
-
   /* Convert children objects into array */
   const result = Children.toArray(children);
   /* If no image passed set default background */
@@ -50,4 +45,3 @@ export default function RoutineCard({
     </>
   );
 }
-
