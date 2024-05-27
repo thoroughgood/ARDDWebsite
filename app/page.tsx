@@ -26,7 +26,7 @@ export default function Home() {
       }}
     >
       <main className="w-full p-24 min-h-screen">
-        <div className="flex w-full justify-center pb-5 text-5xl font-bold text-white">
+        <div className="flex w-full justify-center pb-5 text-4xl font-bold text-white">
           ARDD's Aim Guide
         </div>
         <div className="mx-auto flex max-w-screen-xl flex-row">
