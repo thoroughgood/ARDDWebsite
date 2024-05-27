@@ -197,7 +197,32 @@ export default function Home() {
               <Tier rank="C">test</Tier>
             </div>
           )}
-          {topic == 'about' && <>about me</>}
+          {topic == 'about' && (
+            <>
+              <div className="flex flex-row flex-wrap pl-5 gap-5">
+                <ReactCard
+                  name="ASTRA"
+                  description="Achieved astra rank in Voltaic benchmarks"
+                />
+                <ReactCard
+                  name="VOLTAIC"
+                  description="Member of professional aiming group VT"
+                />
+                <ReactCard
+                  name="TF2 PRO"
+                  description="PRO TF2 PLAYER"
+                />
+                <ReactCard
+                  name="RADIANT"
+                  description="RADIANT VALORANT PLAYER"
+                />
+                <ReactCard
+                  name="AIMLABS RUNNERUP"
+                  description="Runner-Up for aimlabs skill tournament"
+                />
+              </div>
+            </>
+          )}
         </div>
       </main>
     </div>

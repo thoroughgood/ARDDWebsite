@@ -1,9 +1,38 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
+import { Ubuntu } from 'next/font/google';
+import { Radio_Canada } from 'next/font/google';
+import { Quicksand } from 'next/font/google';
+import { Roboto_Condensed } from 'next/font/google';
 import './globals.css';
 
+const radio_canada = Radio_Canada({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+const quicksand = Quicksand({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: '400',
+});
+
 const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+const roboto_condensed = Roboto_Condensed({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+const inter = Inter({
   subsets: ['latin'],
   weight: '400',
 });
