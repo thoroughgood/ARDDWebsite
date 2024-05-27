@@ -16,7 +16,6 @@ import Background from '@/public/media/background.jpg';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
-  console.log('Background:', Background);
   return (
     <div
       style={{
@@ -32,17 +31,29 @@ export default function Home() {
         </div>
         <div className="mx-auto flex max-w-screen-xl flex-row">
           <div className="gap flex max-w-60 flex-col gap-5">
-            <TopicButton onClick={() => setTopic('routines')}>
+            <TopicButton
+              onClick={() => setTopic('routines')}
+              isActive={topic === 'routines'}
+            >
               Routines
             </TopicButton>
-            <TopicButton onClick={() => setTopic('guides')}>
+            <TopicButton
+              onClick={() => setTopic('guides')}
+              isActive={topic === 'guides'}
+            >
               {' '}
               Aiming Guides{' '}
             </TopicButton>
-            <TopicButton onClick={() => setTopic('rankings')}>
+            <TopicButton
+              onClick={() => setTopic('rankings')}
+              isActive={topic === 'rankings'}
+            >
               Aimer Rankings{' '}
             </TopicButton>
-            <TopicButton onClick={() => setTopic('about')}>
+            <TopicButton
+              onClick={() => setTopic('about')}
+              isActive={topic === 'about'}
+            >
               {' '}
               About{' '}
             </TopicButton>

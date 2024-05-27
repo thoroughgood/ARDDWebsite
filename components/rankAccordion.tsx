@@ -30,13 +30,13 @@ export default function RankAccordion() {
         collapsible
       >
         <AccordionItem value="item-1">
-          <div className="z-0 bg-yellow-300/40 rounded-t-2xl shadow-md shadow-black">
+          <div className="z-0 border-b border-black bg-yellow-300/40 rounded-t-2xl shadow-md shadow-black">
             <AccordionTrigger className="z-0 flex justify-center font-sans text-xl font-bold text-white">
               Iron - Gold
             </AccordionTrigger>
           </div>
-          <AccordionContent className="border-x bg-stone-00/40">
-            tablished fact that a reader will be distracted by the
+          <AccordionContent className="text-white p-1 bg-yellow-300/40">
+            Established fact that a reader will be distracted by the
             readable content of a page when looking at its layout. The
             point of using Lorem Ipsum is that it has a more-or-less
             normal distribution of letters, as opposed to using
@@ -48,8 +48,8 @@ export default function RankAccordion() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <div className="z-0 shadow-md shadow-black bg-teal-300/40">
-            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
+          <div className="z-0 shadow-md shadow-black bg-teal-300/40 border-b border-black">
+            <AccordionTrigger className="z-0  flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
               Plat - Diamond
             </AccordionTrigger>
           </div>
