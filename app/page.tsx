@@ -110,6 +110,47 @@ export default function Home() {
                     Default VAL Playlist
                   </RoutineCard>
                 </div>
+                <Badge className="bg-yellow-300/30 max-h-12 w-[71px]">
+                  <h1 className="text-2xl font-bold text-gray-300">
+                    Mid
+                  </h1>{' '}
+                </Badge>
+                <div className="flex flex-row flex-wrap gap-5 pl-3">
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                </div>
+                <Badge className="bg-stone-800 max-h-12 w-[85px]">
+                  <h1 className="text-2xl font-bold text-gray-300">
+                    Trash
+                  </h1>{' '}
+                </Badge>
+                <div className="flex flex-row flex-wrap gap-5 pl-3">
+                  <RoutineCard
+                    type="kovaaks"
+                    link="KovaaKsClippingBrownBottomfrag"
+                  >
+                    Kovaaks - VALORANT
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                </div>
               </div>
             </>
           )}
