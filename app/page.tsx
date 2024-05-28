@@ -17,7 +17,6 @@ import ReactCard from '@/components/reactCardFlip';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
-  console.log('Background:', Background);
   return (
     <div
       style={{
@@ -28,22 +27,34 @@ export default function Home() {
       }}
     >
       <main className="w-full p-24 min-h-screen">
-        <div className="flex w-full justify-center pb-5 text-5xl font-bold text-white">
+        <div className="flex w-full justify-center pb-5 text-4xl font-bold text-white">
           ARDD's Aim Guide
         </div>
         <div className="mx-auto flex max-w-screen-xl flex-row">
           <div className="gap flex max-w-60 flex-col gap-5">
-            <TopicButton onClick={() => setTopic('routines')}>
+            <TopicButton
+              onClick={() => setTopic('routines')}
+              isActive={topic === 'routines'}
+            >
               Routines
             </TopicButton>
-            <TopicButton onClick={() => setTopic('guides')}>
+            <TopicButton
+              onClick={() => setTopic('guides')}
+              isActive={topic === 'guides'}
+            >
               {' '}
               Aiming Guides{' '}
             </TopicButton>
-            <TopicButton onClick={() => setTopic('rankings')}>
+            <TopicButton
+              onClick={() => setTopic('rankings')}
+              isActive={topic === 'rankings'}
+            >
               Aimer Rankings{' '}
             </TopicButton>
-            <TopicButton onClick={() => setTopic('about')}>
+            <TopicButton
+              onClick={() => setTopic('about')}
+              isActive={topic === 'about'}
+            >
               {' '}
               About{' '}
             </TopicButton>
@@ -90,6 +101,47 @@ export default function Home() {
                   <RoutineCard type="flex" content={jettImage.src}>
                     Default VAL Playlist
                   </RoutineCard>{' '}
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                </div>
+                <Badge className="bg-yellow-300/30 max-h-12 w-[71px]">
+                  <h1 className="text-2xl font-bold text-gray-300">
+                    Mid
+                  </h1>{' '}
+                </Badge>
+                <div className="flex flex-row flex-wrap gap-5 pl-3">
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                  <RoutineCard type="flex" content={jettImage.src}>
+                    Default VAL Playlist
+                  </RoutineCard>
+                </div>
+                <Badge className="bg-stone-800 max-h-12 w-[85px]">
+                  <h1 className="text-2xl font-bold text-gray-300">
+                    Trash
+                  </h1>{' '}
+                </Badge>
+                <div className="flex flex-row flex-wrap gap-5 pl-3">
+                  <RoutineCard
+                    type="kovaaks"
+                    link="KovaaKsClippingBrownBottomfrag"
+                  >
+                    Kovaaks - VALORANT
+                  </RoutineCard>
                   <RoutineCard type="flex" content={jettImage.src}>
                     Default VAL Playlist
                   </RoutineCard>
