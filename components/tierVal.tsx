@@ -10,28 +10,28 @@ interface TierValProps {
 export default function TierVal({ rank }: TierValProps) {
   if (rank == 'S') {
     return (
-      <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-red-800/70 text-xl font-bold">
+      <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-red-800/70 text-xl font-bold">
         {rank}
       </div>
     );
   }
   if (rank == 'A') {
     return (
-      <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-orange-700/70 text-xl font-bold">
+      <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-orange-700/70 text-xl font-bold">
         {rank}
       </div>
     );
   }
   if (rank == 'B') {
     return (
-      <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-yellow-400/70 text-xl font-bold">
+      <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-yellow-400/70 text-xl font-bold">
         {rank}
       </div>
     );
   }
   if (rank == 'C') {
     return (
-      <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-green-500/70 text-xl font-bold">
+      <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-green-500/70 text-xl font-bold">
         {rank}
       </div>
     );

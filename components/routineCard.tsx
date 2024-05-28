@@ -21,7 +21,7 @@ export default function RoutineCard({
   return (
     <>
       <Button
-        className={`z-10 rounded-2xl h-12 duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800/60 border hover:bg-orange-800/60' : 'border-blue-500/60 brightness-110 border hover:bg-blue-500/60'}`}
+        className={`z-10 rounded-2xl h-12 font-sans duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800/60 border hover:bg-orange-800/60' : 'border-blue-500/60 brightness-110 border hover:bg-blue-500/60'}`}
       >
         <a
           className="px-1"

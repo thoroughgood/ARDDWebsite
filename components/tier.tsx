@@ -20,7 +20,7 @@ export default function Tier({ children, rank }: TierProps) {
   };
   console.log(isHovered);
   return (
-    <div className="flex gap-1 pt-1">
+    <div className="flex gap-1 pb-1">
       <TierVal rank={`${rank}`}></TierVal>
       <div className="flex w-full items-center justify-start rounded-lg bg-neutral-800 pl-3">
         {children}

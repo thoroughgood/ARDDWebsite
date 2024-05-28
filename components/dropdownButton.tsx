@@ -40,7 +40,7 @@ export default function DropdownButton({
       >
         <AccordionItem value={uid}>
           <div
-            className="z-10 rounded-2xl"
+            className="z-10 rounded-2xl bg-neutral-800"
             /* If there is an image, set it, else use default colour */
             style={
               content
