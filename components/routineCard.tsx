@@ -51,7 +51,7 @@ export default function RoutineCard({
     return (
       <>
         <Button
-          className={`z-10 rounded-2xl h-12 duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg border-blue-500/60 brightness-110 hover:bg-sky-700`}
+          className={`z-10 rounded-2xl h-12 duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg text-blue-500/60 brightness-110 hover:bg-sky-700`}
         >
           <a className="px-1" href={`${link}`}>
             {result[0]}
