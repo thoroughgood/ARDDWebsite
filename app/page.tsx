@@ -13,6 +13,7 @@ import { Accordion } from '@/components/ui/accordion';
 import RankAccordion from '@/components/rankAccordion';
 import RoutineCard from '@/components/routineCard';
 import Background from '@/public/media/background.jpg';
+import ReactCard from '@/components/reactCardFlip';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
