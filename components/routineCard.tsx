@@ -4,7 +4,12 @@ import React, { Children, useState } from 'react';
 import { Button } from './ui/button';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ToastContainer, toast } from 'react-toastify';
+import { Bebas_Neue } from 'next/font/google';
 
+const bebas_neue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: '400',
+});
 interface routineCardProps {
   children: React.ReactNode; // Corrected type to React.ReactNode
   type: String;
@@ -25,9 +30,11 @@ export default function RoutineCard({
         <CopyToClipboard text={link} onCopy={() => isCopied(true)}>
           <Button
             onClick={handleClick}
-            className={`z-10 rounded-2xl h-12 duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg ${type === 'kovaaks' ? 'border-orange-800/60 border hover:bg-amber-700' : 'border-blue-500/60 brightness-110 border hover:bg-sky-700'}`}
+            className={`z-10 rounded-2xl h-12 text-2xl duration-1000 text-orange-600 ease-in-out max-h-screen-lg bg-transparent shadow-md border hover:scale-110 max-w-screen-lg hover:shadow-amber-700 hover:bg-transparent`}
           >
-            <div className="px-1">{result[0]}</div>
+            <div className={`${bebas_neue.className} px-1`}>
+              {result[0]}
+            </div>
             <svg
               width="15"
               height="15"
@@ -51,9 +58,12 @@ export default function RoutineCard({
     return (
       <>
         <Button
-          className={`z-10 rounded-2xl h-12 duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-lg border hover:scale-110 max-w-screen-lg text-blue-500/60 brightness-110 hover:bg-sky-700`}
+          className={`z-10 rounded-2xl h-12 text-2xl duration-1000 ease-in-out max-h-screen-lg bg-transparent shadow-[0px_0px_3px_3px_rgab(0,0,0)] border hover:scale-110 max-w-screen-lg text-blue-500/60 brightness-110 hover:shadow-sky-700 hover:bg-transparent`}
         >
-          <a className="px-1" href={`${link}`}>
+          <a
+            className={`${bebas_neue.className} px-1`}
+            href={`${link}`}
+          >
             {result[0]}
           </a>
           <svg

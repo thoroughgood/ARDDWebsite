@@ -23,10 +23,11 @@ export default function reactCardFlip({
     <ReactCardFlip isFlipped={isFlipped}>
       <div className="bg-gradient-to-r rounded-sm from-yellow-400 to-yellow-100">
         <div
-          onClick={onClick}
+          onMouseOver={onClick}
+          onMouseOut={onClick}
           className="rounded-2xl shadow-xl flex flex-col items-center pt-5 shadow-black h-72 w-48 bg-neutral-900"
         >
-          <div className="flex rounded-full w-24 h-24 justify-center items-center bg-neutral-600">
+          <div className="flex rounded-full w-24 h-24 justify-center items-center bg-neutral-500/40">
             {' '}
             IMG{' '}
           </div>
