@@ -25,17 +25,19 @@ export default function RankAccordion() {
   return (
     <>
       <Accordion
-        className="rounded-2xl bg-cover shadow-md shadow-stone-900"
+        className="rounded-2xl bg-neutral-900 shadow-stone-900"
         type="single"
         collapsible
       >
         <AccordionItem value="item-1">
-          <div className="z-0 border-b border-black bg-yellow-300/40 rounded-t-2xl shadow-md shadow-black">
-            <AccordionTrigger className="z-0 flex justify-center font-sans text-xl font-bold text-white">
-              Iron - Gold
+          <div className="z-0 border-b border-black bg-neutral-900 rounded-t-2xl shadow-md shadow-black">
+            <AccordionTrigger className="flex justify-center">
+              <div className="text-center font-bold font-sans text-xl inline-block text-neutral-700">
+                Iron
+              </div>
             </AccordionTrigger>
           </div>
-          <AccordionContent className="text-white p-1 bg-yellow-300/40">
+          <AccordionContent className="text-white p-1 bg-neutral-900">
             Established fact that a reader will be distracted by the
             readable content of a page when looking at its layout. The
             point of using Lorem Ipsum is that it has a more-or-less
@@ -48,9 +50,11 @@ export default function RankAccordion() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <div className="z-0 shadow-md shadow-black bg-teal-300/40 border-b border-black">
-            <AccordionTrigger className="z-0  flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
-              Plat - Diamond
+          <div className="z-0 shadow-md shadow-black bg-neutral-900 border-black">
+            <AccordionTrigger className="z-0 p-5 flex justify-center">
+              <div className="bg-clip-text text-center font-bold font-sans text-xl bg-gradient-to-r inline-block from-cyan-400 to-violet-600 text-transparent">
+                Plat - Diamond
+              </div>
             </AccordionTrigger>
           </div>
           <AccordionContent>
@@ -74,8 +78,8 @@ export default function RankAccordion() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-6">
-          <div className="z-0 shadow-md shadow-black bg-purple-300/60">
-            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
+          <div className="z-0 shadow-md shadow-black bg-neutral-900">
+            <AccordionTrigger className="z-0 flex justify-center text-pink-400 rounded-2xl p-5 font-sans text-xl font-bold">
               Jade - Master
             </AccordionTrigger>
           </div>
@@ -92,7 +96,7 @@ export default function RankAccordion() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <div className="z-0 shadow-md shadow-black bg-orange-300/40">
+          <div className="z-0 shadow-md shadow-black bg-neutral-900">
             <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
               Grandmaster - Nova
             </AccordionTrigger>
@@ -110,7 +114,7 @@ export default function RankAccordion() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
-          <div className="z-0 rounded-b-2xl shadow-md shadow-black bg-rose-500/50">
+          <div className="z-0 rounded-b-2xl shadow-md shadow-black bg-neutral-900">
             <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
               Nova++
             </AccordionTrigger>

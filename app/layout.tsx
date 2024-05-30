@@ -50,7 +50,10 @@ export default function RootLayout({
   // Here, we define the layout of the website (typically segregate based off user status)
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <div>Test</div>
+        {children}
+      </body>
     </html>
   );
 }

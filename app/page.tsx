@@ -12,7 +12,7 @@ import RankingBadge from '@/components/rankingBadge';
 import { Accordion } from '@/components/ui/accordion';
 import RankAccordion from '@/components/rankAccordion';
 import RoutineCard from '@/components/routineCard';
-import Background from '@/public/media/background.jpg';
+import Background from '@/public/media/website.png';
 import ReactCard from '@/components/reactCardFlip';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
@@ -20,16 +20,17 @@ export default function Home() {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(23,23,23,0.9) 0%, rgba(23,23,23,0.99), 40%, rgba(23,23,23,1) 50%), url(${Background.src})`,
-        backgroundSize: '100%, 100%',
+        backgroundImage: `linear-gradient(to bottom, rgba(23,23,23,0.2) 0%, rgba(23,23,23,0.5), 40%, rgba(23,23,23,0.9) 50%), url(${Background.src})`,
+        backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
       }}
     >
-      <main className="w-full p-24 min-h-screen">
-        <div className="flex w-full justify-center pb-5 text-4xl font-bold text-white">
+      <main className="w-full px-24 min-h-screen">
+        <div className="flex w-full justify-center mb-5 text-4xl bg-neutral-500 font-bold text-white">
           ARDD's Aim Guide
         </div>
+
         <div className="mx-auto flex max-w-screen-xl flex-row">
           <div className="gap flex max-w-60 flex-col gap-5">
             <TopicButton
@@ -161,16 +162,19 @@ export default function Home() {
                 <div className="text-white font-bold text-3xl">
                   Static
                 </div>
-                tablished fact that a reader will be distracted by the
-                readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a
-                more-or-less normal distribution of letters, as
-                opposed to using 'Content here, content here', making
-                it look like readable English. Many desktop publishing
-                packages and web page editors now use Lorem Ipsum as
-                their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their
-                infancy. Various versio
+                <div className="text-white">
+                  tablished fact that a reader will be distracted by
+                  the readable content of a page when looking at its
+                  layout. The point of using Lorem Ipsum is that it
+                  has a more-or-less normal distribution of letters,
+                  as opposed to using 'Content here, content here',
+                  making it look like readable English. Many desktop
+                  publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a
+                  search for 'lorem ipsum' will uncover many web sites
+                  still in their infancy. Various versio
+                </div>
+
                 <RankAccordion />
               </div>
             </>
