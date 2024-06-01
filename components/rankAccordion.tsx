@@ -33,7 +33,8 @@ export default function RankAccordion() {
           <div className="z-0 border-b border-black bg-neutral-900 rounded-t-2xl shadow-md shadow-black">
             <AccordionTrigger className="flex justify-center">
               <div className="text-center font-bold font-sans text-xl inline-block text-neutral-700">
-                Iron
+                Iron <span className="text-white">-</span>{' '}
+                <span className="text-yellow-500">Gold</span>
               </div>
             </AccordionTrigger>
           </div>
@@ -52,8 +53,9 @@ export default function RankAccordion() {
         <AccordionItem value="item-2">
           <div className="z-0 shadow-md shadow-black bg-neutral-900 border-black">
             <AccordionTrigger className="z-0 p-5 flex justify-center">
-              <div className="bg-clip-text text-center font-bold font-sans text-xl bg-gradient-to-r inline-block from-cyan-400 to-violet-600 text-transparent">
-                Plat - Diamond
+              <div className="text-center font-bold font-sans text-xl inline-block text-cyan-500">
+                Platinum <span className="text-white">-</span>{' '}
+                <span className="text-cyan-200">Diamond</span>
               </div>
             </AccordionTrigger>
           </div>
@@ -79,8 +81,11 @@ export default function RankAccordion() {
         </AccordionItem>
         <AccordionItem value="item-6">
           <div className="z-0 shadow-md shadow-black bg-neutral-900">
-            <AccordionTrigger className="z-0 flex justify-center text-pink-400 rounded-2xl p-5 font-sans text-xl font-bold">
-              Jade - Master
+            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold">
+              <div className="text-center font-bold text-green-500 font-sans text-xl inline-block ">
+                Jade <span className="text-white">-</span>{' '}
+                <span className="text-pink-400">Master</span>
+              </div>{' '}
             </AccordionTrigger>
           </div>
           <AccordionContent>
@@ -97,8 +102,11 @@ export default function RankAccordion() {
         </AccordionItem>
         <AccordionItem value="item-4">
           <div className="z-0 shadow-md shadow-black bg-neutral-900">
-            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
-              Grandmaster - Nova
+            <AccordionTrigger className="z-0 flex justify-center rounded-2xl  p-5 font-sans text-xl font-bold text-white">
+              <div className="text-center font-bold font-sans text-xl inline-block text-yellow-300">
+                Grandmaster <span className="text-white">-</span>{' '}
+                <span className="text-violet-500">Nova</span>
+              </div>
             </AccordionTrigger>
           </div>
           <AccordionContent>
@@ -115,8 +123,8 @@ export default function RankAccordion() {
         </AccordionItem>
         <AccordionItem value="item-5">
           <div className="z-0 rounded-b-2xl shadow-md shadow-black bg-neutral-900">
-            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-white">
-              Nova++
+            <AccordionTrigger className="z-0 flex justify-center rounded-2xl p-5 font-sans text-xl font-bold text-rose-500">
+              Astra++
             </AccordionTrigger>
           </div>
           <AccordionContent>

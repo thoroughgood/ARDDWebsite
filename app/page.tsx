@@ -27,12 +27,8 @@ export default function Home() {
       }}
     >
       <main className="w-full px-24 min-h-screen">
-        <div className="flex w-full justify-center mb-5 text-4xl bg-neutral-500 font-bold text-white">
-          ARDD's Aim Guide
-        </div>
-
-        <div className="mx-auto flex max-w-screen-xl flex-row">
-          <div className="gap flex max-w-60 flex-col gap-5">
+        <div className="mx-auto flex-col max-w-screen-xl">
+          <div className="gap justify-evenly flex max-w-full flex-row gap-5 p-5">
             <TopicButton
               onClick={() => setTopic('routines')}
               isActive={topic === 'routines'}
@@ -62,13 +58,13 @@ export default function Home() {
           </div>
           {topic == 'routines' && (
             <>
-              <div className="flex flex-col gap-5 flex-wrap pl-4">
+              <div className="flex flex-col gap-5 flex-wrap pt-5">
                 <Badge className="bg-green-300/30 w-[113px] max-h-12">
                   <h1 className="text-2xl font-bold text-gray-300">
                     Peaked
                   </h1>
                 </Badge>
-                <div className="flex flex-row flex-wrap gap-5 pl-5">
+                <div className="flex flex-row flex-wrap gap-5">
                   <RoutineCard
                     link="https://go.aimlab.gg/v1/redirects?link=aimlab%3a%2f%2fworkshop%3fid%3d2916614100%26source%3d7D4B496234CF1774&link=steam%3a%2f%2frungameid%2f714010"
                     type="kovaaks"
@@ -82,6 +78,28 @@ export default function Home() {
                   >
                     Cartoonz
                   </RoutineCard>
+                  <RoutineCard
+                    link="https://youtube.com"
+                    type="aimlabs"
+                    content={jettImage.src}
+                  >
+                    Cartoonz
+                  </RoutineCard>
+                  <RoutineCard
+                    link="https://youtube.com"
+                    type="aimlabs"
+                    content={jettImage.src}
+                  >
+                    Cartoonz
+                  </RoutineCard>
+                  <RoutineCard
+                    link="https://youtube.com"
+                    type="aimlabs"
+                    content={jettImage.src}
+                  >
+                    Cartoonz
+                  </RoutineCard>
+
                   <RoutineCard link="https://aimlabs.com" type="flex">
                     DAPR
                   </RoutineCard>

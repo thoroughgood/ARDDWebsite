@@ -31,7 +31,7 @@ export default function RoutineCard({
         <CopyToClipboard text={link} onCopy={() => isCopied(true)}>
           <Button
             onClick={handleClick}
-            className={`z-10 rounded-xl h-12 text-2xl duration-1000 text-white brightness-90 shadow-md shadow-black ease-in-out max-h-screen-lg bg-amber-700 hover:shadow-[0px_0px_3px_3px_rgab(0,0,0)] border border-amber-600 hover:scale-110 max-w-screen-lg hover:shadow-amber-900 hover:bg-amber-700`}
+            className={`z-10 rounded-xl h-12 text-2xl duration-1000 text-white brightness-90 shadow-md shadow-black ease-in-out w-auto max-h-screen-lg bg-amber-700 hover:shadow-[0px_0px_3px_3px_rgab(0,0,0)] border border-amber-600 hover:scale-110 max-w-screen-lg hover:shadow-amber-900 hover:bg-amber-700`}
           >
             <div className={`${bebas_neue.className} px-1`}>
               {result[0]}
@@ -52,7 +52,6 @@ export default function RoutineCard({
             </svg>
           </Button>
         </CopyToClipboard>
-        <ToastContainer />
       </>
     );
   } else {

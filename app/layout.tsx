@@ -51,7 +51,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div>Test</div>
+        <div className="flex w-full justify-center text-4xl pt-5 bg-neutral-800 font-bold text-white">
+          ARDD's Aim Guide
+        </div>
+
         {children}
       </body>
     </html>
