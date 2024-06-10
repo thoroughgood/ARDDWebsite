@@ -26,7 +26,7 @@ export default function Home() {
         backgroundAttachment: 'fixed',
       }}
     >
-      <main className="w-full px-24 min-h-screen">
+      <main className="w-full px-24 py-14 min-h-screen">
         <div className="mx-auto flex-col max-w-screen-xl">
           <div className="gap justify-evenly flex max-w-full flex-row gap-5 p-5">
             <TopicButton
