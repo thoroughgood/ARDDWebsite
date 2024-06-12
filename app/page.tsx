@@ -68,34 +68,35 @@ export default function Home() {
                   <RoutineCard
                     link="https://go.aimlab.gg/v1/redirects?link=aimlab%3a%2f%2fworkshop%3fid%3d2916614100%26source%3d7D4B496234CF1774&link=steam%3a%2f%2frungameid%2f714010"
                     type="kovaaks"
+                    training={true}
                   >
                     ARDD
                   </RoutineCard>
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
-                    content={jettImage.src}
+                    training={false}
                   >
                     Cartoonz
                   </RoutineCard>
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
-                    content={jettImage.src}
+                    training={false}
                   >
                     Cartoonz
                   </RoutineCard>
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
-                    content={jettImage.src}
+                    training={false}
                   >
                     Cartoonz
                   </RoutineCard>
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
-                    content={jettImage.src}
+                    training={false}
                   >
                     Cartoonz
                   </RoutineCard>
