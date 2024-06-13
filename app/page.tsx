@@ -14,9 +14,14 @@ import RankAccordion from '@/components/rankAccordion';
 import RoutineCard from '@/components/routineCard';
 import Background from '@/public/media/website.png';
 import ReactCard from '@/components/reactCardFlip';
+import data from '@/public/data.json'
+import { AppData, TierData } from '@/types';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
+  for (const key in data) {
+    console.log(`${key}: ${data[key]}`)
+  }
   return (
     <div
       style={{
@@ -58,6 +63,8 @@ export default function Home() {
           </div>
           {topic == 'routines' && (
             <>
+
+            <div> </div>
               <div className="flex flex-col gap-5 flex-wrap pt-5">
                 <Badge className="bg-green-300/30 w-[113px] max-h-12">
                   <h1 className="text-2xl font-bold text-gray-300">
@@ -70,7 +77,9 @@ export default function Home() {
                     type="kovaaks"
                     training={true}
                   >
-                    ARDD
+                    <div>ARDD</div>
+                    Name: Dapr Training
+
                   </RoutineCard>
                   <RoutineCard
                     link="https://youtube.com"

@@ -3,7 +3,7 @@
 import React, { Children, useState } from 'react';
 import { Button } from './ui/button';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
 import { Bebas_Neue } from 'next/font/google';
 import {
   HoverCard,
@@ -11,38 +11,42 @@ import {
   HoverCardTrigger,
 } from './ui/hover-card';
 import Link from 'next/link';
-
+import { AppData, TierData } from '@/types';
 const bebas_neue = Bebas_Neue({
   subsets: ['latin'],
   weight: '400',
 });
 interface routineCardProps {
   children: React.ReactNode; // Corrected type to React.ReactNode
-  type: string;
-  link: string;
-  training: boolean;
+  data: TierData;
 }
 export default function RoutineCard({
   children,
-  type,
-  link,
-  training,
+  data
 }: routineCardProps) {
   const [copied, isCopied] = useState(false);
   const result = Children.toArray(children);
   const handleClick = () =>
-    toast('Copied!', { autoClose: 5000, position: 'bottom-left' });
-  if (type === 'kovaaks') {
+    toast('Link copied!', {
+      duration: 3000,
+      position: 'top-center',
+      icon: '😁'
+      
+    });
+    //if there is no input we have been given an invalid data set.
+    if (!data.name) {
+      return null;
+    } else if (data.tier === 'kovaaks') {
     return (
       <>
         <CopyToClipboard
-          text={link}
+          text={data.playlistLink ? data.playlistLink : 'empty link'}
           onCopy={() => {
             isCopied(true);
             console.log('COPIEWD!');
           }}
         >
-          <Button className="p-0">
+          <Button className="p-0 h-auto">
             <HoverCard>
               <HoverCardTrigger
                 onClick={handleClick}
@@ -52,10 +56,13 @@ export default function RoutineCard({
                   className={`${bebas_neue.className} px-1 flex flex-nowrap items-center`}
                 >
                   {result[0]}
-                  {training ? <> 💪</> : <> 🎯</>}
+                  {data.type == "training" ? <> 💪</> : <> 🎯</>}
                 </div>
               </HoverCardTrigger>
-              <HoverCardContent>Test</HoverCardContent>
+              <HoverCardContent className="w-80">
+                <div className="flex justify-between space-x-4">
+                  {result[1]}
+                  </div></HoverCardContent>
             </HoverCard>
           </Button>
         </CopyToClipboard>

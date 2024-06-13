@@ -21,6 +21,7 @@
     "react-card-flip": "^1.2.2",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "react-toastify": "^10.0.5",
     "save-dev": "^0.0.1-security",
     "tailwind-merge": "^2.3.0",

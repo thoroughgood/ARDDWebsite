@@ -6,6 +6,7 @@ import { Radio_Canada } from 'next/font/google';
 import { Quicksand } from 'next/font/google';
 import { Roboto_Condensed } from 'next/font/google';
 import './globals.css';
+import { Toaster } from 'react-hot-toast';
 
 const radio_canada = Radio_Canada({
   subsets: ['latin'],
@@ -51,6 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
+        <Toaster/>
         <div className="flex w-full justify-center text-4xl p-2 bg-black/50 shadow-md font-bold absolute z-50 inset-x-1 text-white">
           ARDD's Aim Guide
         </div>
