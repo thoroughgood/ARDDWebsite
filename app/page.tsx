@@ -19,7 +19,10 @@ import { AppData, TierData } from '@/types';
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
+  console.log(data)
   for (const key in data) {
+    const datainfo = JSON.stringify(data);
+    console.log(datainfo)
     console.log(`${key}: ${data[key]}`)
   }
   return (

@@ -11,6 +11,7 @@ import {
   HoverCardTrigger,
 } from './ui/hover-card';
 import Link from 'next/link';
+import data from '@/public/data.json'
 import { AppData, TierData } from '@/types';
 const bebas_neue = Bebas_Neue({
   subsets: ['latin'],
