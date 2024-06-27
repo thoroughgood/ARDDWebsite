@@ -14,17 +14,10 @@ import RankAccordion from '@/components/rankAccordion';
 import RoutineCard from '@/components/routineCard';
 import Background from '@/public/media/website.png';
 import ReactCard from '@/components/reactCardFlip';
-import data from '@/public/data.json'
-import { AppData, TierData } from '@/types';
+
 export default function Home() {
   //Use state to manage what content is shown, routines by default
   const [topic, setTopic] = useState('routines');
-  console.log(data)
-  for (const key in data) {
-    const datainfo = JSON.stringify(data);
-    console.log(datainfo)
-    console.log(`${key}: ${data[key]}`)
-  }
   return (
     <div
       style={{
@@ -81,13 +74,16 @@ export default function Home() {
                     training={true}
                   >
                     <div>ARDD</div>
-                    Name: Dapr Training
+                    <span>tier: D</span>
+                    <span>type: Development</span>
+                    <span>Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient.</span>
+
 
                   </RoutineCard>
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
-                    training={false}
+                    training={true}
                   >
                     Cartoonz
                   </RoutineCard>
