@@ -11,24 +11,27 @@ import {
   HoverCardTrigger,
 } from './ui/hover-card';
 import Link from 'next/link';
+import { title } from 'process';
 const bebas_neue = Bebas_Neue({
   subsets: ['latin'],
   weight: '400',
 });
 interface routineCardProps {
-  children: React.ReactNode; // Corrected type to React.ReactNode
   type: string;
   link: string;
   training: boolean;
+  title: string;
+  content: string;
 }
 export default function RoutineCard({
-  children,
   type,
   link,
   training,
+  title,
+  content
 }: routineCardProps) {
   const [copied, isCopied] = useState(false);
-  const result = Children.toArray(children);
+
   const handleKovaaksClick = () =>
     toast('Link copied!', {
       duration: 3000,
@@ -54,17 +57,16 @@ export default function RoutineCard({
                 <div
                   className={`${bebas_neue.className} px-1 flex flex-nowrap items-center`}
                 >
-                  {result[0]}
+                  {title.slice(6)}
                   {training ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
                 </div>
               </HoverCardTrigger>
-              <HoverCardContent className="w-auto max-w-screen-xl">
-                <div className="flex flex-col items-start w-80">
-                  <div className="font-bold w-auto text-lg text-red-500">{result[1]}</div>
-                  <div className="font-bold text-lg text-red-500 w-auto">{result[2]}</div>
-                  <div className="w-auto">{result[3]}</div>
-                </div>
-              </HoverCardContent>
+              <HoverCardContent className="w-80">
+                <div className="flex justify-between space-x-4 whitespace-pre-line">
+                {content.split('\n').map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+                  </div></HoverCardContent>
             </HoverCard>
           </Button>
         </CopyToClipboard>
@@ -73,7 +75,6 @@ export default function RoutineCard({
   } else {
     return (
       <>
-
           <Button className="p-0 h-auto">
             <HoverCard>
               <HoverCardTrigger
@@ -84,7 +85,7 @@ export default function RoutineCard({
                     className={`${bebas_neue.className} px-1 flex flex-nowrap items-center`}
                     target="_blank"
                   >
-                    {result[0]}
+                    {title.slice(6)}
                     
                     {training ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
                     
@@ -92,8 +93,10 @@ export default function RoutineCard({
                 </Link>
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
-                <div className="flex justify-between space-x-4">
-                  {result[1]}
+                <div className="flex justify-between space-x-4 whitespace-pre-line">
+                {content.split('\n').map((paragraph, index) => (
+                  <p key={index}>{paragraph}Hey</p>
+                ))}
                   </div></HoverCardContent>
             </HoverCard>
           </Button>

@@ -72,53 +72,65 @@ export default function Home() {
                     link="https://go.aimlab.gg/v1/redirects?link=aimlab%3a%2f%2fworkshop%3fid%3d2916614100%26source%3d7D4B496234CF1774&link=steam%3a%2f%2frungameid%2f714010"
                     type="kovaaks"
                     training={true}
-                  >
-                    <div>ARDD</div>
-                    <span>tier: D</span>
-                    <span>type: Development</span>
-                    <span>Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient.</span>
-
-
-                  </RoutineCard>
+                    title="Name: Kovaaks - VALORANT"
+                    content="Creator: Kovaaks \n
+                      Playlist Link: KovaaKsClippingBrownBottomfrag \n
+                      Tier: D\n
+                      Type: Development\n
+                      Review: Most scenarios are not made specifically for valorant, so there are\n
+                      scenarios that cover a relevant aim concept, but not to the specific extent of\n
+                      1:1 use in valorant. This means you will practise additional irrelevant aspects \n
+                      on top of the scenario's useful parts, making practice extremely inefficient."
+                  />
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
                     training={true}
-                  >
-                    Cartoonz
-                  </RoutineCard>
+                    title="Name: VALORANT - Freakazoid"
+                    content="Creator: Kovaaks\n
+                  Playlist Link: KovaaKsBoomstickingJitteryDink
+                  Tier: E
+                  Type: Warmup
+                  Review: This routine is basic and outdated, for each scenario there is a significantly better replacement that is more effective for warming up. "
+                  />
+                  <RoutineCard
+                    link="https://go.aimlab.gg/v1/redirects?link=aimlab%3A%2F%2Fworkshop%3Fid%3D2916614100%26source%3D7D4B496234CF1774&link=steam%3A%2F%2Frungameid%2F714010"
+                    type="aimlabs"
+                    training={false}
+                    title="Name: Valorant RAMP Warmup"
+                    content="Creator: Minigod
+Playlist Link: KovaaKsQuestingFastCheater
+Tier: S
+Type: Warmup
+Review: A well-made warmup that covers a variety of aiming concepts relevant to valorant by using both revised old scenarios and newly created innovative scenarios. High praise for the accessibility of each scenario, it isn’t overly difficult to the point beginners would practice incorrectly and it’s not too easy so there is still value for adept aimers to practice. However, the ordering of the scenarios is suboptimal, especially towards the latter half of the warmup."
+                  />
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
                     training={false}
-                  >
-                    Cartoonz
-                  </RoutineCard>
+                    title="Name: Receptioncells - Tac-FPS dynamic"
+                    content="Creator: Receptioncells
+Playlist Link: KovaaKsSnipingJunglegreenOptic 
+Tier: F
+Type: Development
+Review: This playlist composition of popular tacfps dynamic tasks with additional variations of those same scenarios, comes to a total playtime of 45mins. This routine is severely lacking in variety and is extremely bloated, even when shuffled this playlist provides poor value for time."
+                  />
                   <RoutineCard
                     link="https://youtube.com"
                     type="aimlabs"
                     training={false}
-                  >
-                    Cartoonz
-                  </RoutineCard>
-                  <RoutineCard
-                    link="https://youtube.com"
-                    type="aimlabs"
-                    training={false}
-                  >
-                    Cartoonz
-                  </RoutineCard>
+                    title="Name: xset"
+                    content="Creator: zekken
+Playlist Link: KovaaKsFeedingFraggedValue
+Tier: E
+Type: Warmup
+Review: This routine is basic and also outdated, with the exception of “VoxTargetSwitch Click Small” There are better scenarios that achieve the same result and more for warming up for valorant."
+                  />
 
-                  <RoutineCard link="https://aimlabs.com" type="flex">
-                    DAPR
-                  </RoutineCard>
-                  <RoutineCard
-                    link="https://kovaaks.com"
-                    type="kovaaks"
-                    content={jettImage.src}
-                  >
-                    YAY
-                  </RoutineCard>
+                  <RoutineCard link="https://aimlabs.com" type="aimlabs" title="Name: PRX Something" training={true} content="Creator: Something
+Tier: E
+Type: Warmup
+Review: There are too many static scenarios, and on top of that they are static scenarios that aren’t structured for tacfps aim. The extensive amount of static practice causes an extremely high amount of overlap of the mechanics between each scenario being practiced which makes the playlist very inefficient compared to a well-balanced playlist that covers multiple types of aiming."/>
                 </div>
                 <Badge className="bg-pink-300/30 max-h-12 w-[90px]">
                   <h1 className="text-2xl font-bold text-gray-300">
@@ -126,18 +138,7 @@ export default function Home() {
                   </h1>
                 </Badge>
                 <div className="flex flex-row flex-wrap gap-5 pl-3">
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>{' '}
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
+                  <p>Test</p>
                 </div>
                 <Badge className="bg-yellow-300/30 max-h-12 w-[71px]">
                   <h1 className="text-2xl font-bold text-gray-300">
@@ -145,18 +146,7 @@ export default function Home() {
                   </h1>{' '}
                 </Badge>
                 <div className="flex flex-row flex-wrap gap-5 pl-3">
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
+                  <p>test</p>
                 </div>
                 <Badge className="bg-stone-800 max-h-12 w-[85px]">
                   <h1 className="text-2xl font-bold text-gray-300">
@@ -164,21 +154,7 @@ export default function Home() {
                   </h1>{' '}
                 </Badge>
                 <div className="flex flex-row flex-wrap gap-5 pl-3">
-                  <RoutineCard
-                    type="kovaaks"
-                    link="KovaaKsClippingBrownBottomfrag"
-                  >
-                    Kovaaks - VALORANT
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
-                  <RoutineCard type="flex" content={jettImage.src}>
-                    Default VAL Playlist
-                  </RoutineCard>
+                  <p>test</p>
                 </div>
               </div>
             </>
