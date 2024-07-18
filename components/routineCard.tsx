@@ -12,6 +12,7 @@ import {
 } from './ui/hover-card';
 import Link from 'next/link';
 import { title } from 'process';
+import { StringToBoolean } from 'class-variance-authority/types';
 const bebas_neue = Bebas_Neue({
   subsets: ['latin'],
   weight: '400',
@@ -19,16 +20,20 @@ const bebas_neue = Bebas_Neue({
 interface routineCardProps {
   type: string;
   link: string;
-  training: boolean;
   title: string;
-  content: string;
+  creator: string;
+  tier: string;
+  style: string;
+  review: string;
 }
 export default function RoutineCard({
   type,
   link,
-  training,
   title,
-  content
+  creator,
+  tier,
+  style,
+  review
 }: routineCardProps) {
   const [copied, isCopied] = useState(false);
 
@@ -57,15 +62,13 @@ export default function RoutineCard({
                 <div
                   className={`${bebas_neue.className} px-1 flex flex-nowrap items-center`}
                 >
-                  {title.slice(6)}
-                  {training ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
+                  {title}
+                  {style === "Development" ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
                 </div>
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4 whitespace-pre-line">
-                {content.split('\n').map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
+                {creator}{tier}{style}{review}
                   </div></HoverCardContent>
             </HoverCard>
           </Button>
@@ -82,21 +85,19 @@ export default function RoutineCard({
                 >
                 <Link href={`${link}`} passHref legacyBehavior>
                   <a
-                    className={`${bebas_neue.className} px-1 flex flex-nowrap items-center`}
+                    className={`${bebas_neue.className} px-1 flex flex-nowrap text- items-center tracking-normal`}
                     target="_blank"
                   >
-                    {title.slice(6)}
+                    {title}
                     
-                    {training ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
+                    {style === "Development" ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
                     
                   </a>
                 </Link>
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
-                <div className="flex justify-between space-x-4 whitespace-pre-line">
-                {content.split('\n').map((paragraph, index) => (
-                  <p key={index}>{paragraph}Hey</p>
-                ))}
+                <div className="flex-col whitespace-pre-line text-start">
+                <div className="text-red-500 text-lg">Creator:</div> {creator}<br/><div className="text-red-500 text-lg">Tier:</div> {tier}<br/><div className="text-red-500 text-lg">Style:</div> {style}<br/><div className="text-red-500 text-lg">Review:</div> {review}
                   </div></HoverCardContent>
             </HoverCard>
           </Button>

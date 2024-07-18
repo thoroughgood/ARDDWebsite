@@ -1,25 +1,23 @@
 
 {
-  "Peak": [{
-    "name": "Kovaaks - VALORANT",
-    "playlistLink": "KovaaKsClippingBrownBottomfrag",
-    "tier": "D",
-    "type": "Training",
-    "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient."
+  "S-Tier": [{
+    "name": "Valorant RAMP Warmup",
+    "creator": "Minigod",
+    "playlistLink": "KovaaKsQuestingFastCheater / https://go.aimlab.gg/v1/redirects?link=aimlab%3A%2F%2Fworkshop%3Fid%3D2916614100%26source%3D7D4B496234CF1774&link=steam%3A%2F%2Frungameid%2F714010",
+    "tier": "S",
+    "type": "Warmup",
+    "review": "A well-made warmup that covers a variety of aiming concepts relevant to valorant by using both revised old scenarios and newly created innovative scenarios. High praise for the accessibility of each scenario, it isn’t overly difficult to the point beginners would practice incorrectly and it’s not too easy so there is still value for adept aimers to practice. However, the ordering of the scenarios is suboptimal, especially towards the latter half of the warmup."
   }, {
-    "name": "Kovaaks - VALORANT",
-    "playlistLink": "KovaaKsClippingBrownBottomfrag",
-    "tier": "D",
-    "type": "Training",
-    "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient."
-  }, {
-    "name": "Kovaaks - VALORANT",
-    "playlistLink": "KovaaKsClippingBrownBottomfrag",
-    "tier": "D",
-    "type": "Training",
-    "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient."
-  }],
-  "Good": [{
+    "name": "MICRO GOLD MINE",
+    "creator": "etherelkgg",
+    "playlistLink": "KovaaKsTrollingDesertsandGasmask",
+    "tier": "S",
+    "type": "Development",
+    "review": "This playlist covers micro-corrections in extremely high depth and has many variations in how to apply those micro-correction skills. Every scenario is innovative and engaging, combine that with a good ordering of scenarios in the playlist and you have a high-quality routine."
+  }
+  
+  ],
+  "A-Tier": [{
     "name": "Kovaaks - VALORANT",
     "playlistLink": "KovaaKsClippingBrownBottomfrag",
     "tier": "D",
@@ -37,22 +35,102 @@
       "type": "Training",
       "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient."
     }], 
-  "Mid": [{
-    "name": "Kovaaks - VALORANT",
-    "playlistLink": "KovaaKsClippingBrownBottomfrag",
-    "tier": "D",
-    "type": "Training",
-    "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient."}, {
+  "B-Tier": [{
+    "name": "Practical Scenarios",
+    "creator": "y4mz",
+    "playlistLink": "KovaaKsSwitchingTealValue",
+    "tier": "B",
+    "type": "Warmup",
+    "review": "Well-structured playlist starting with micro-adjustments and then transitioning to wider flicks with good inclusions of dynamic aiming, The last 2 scenarios are much lower in quality compared to the rest of the playlist and drag down the value of the playlist."
+  }, {
+    "name": "A1D 2024",
+    "creator": "A1D",
+    "playlistLink": "KovaaKsnamedroppingMidnightblueSecret",
+    "tier": "B",
+    "type": "Warmup",
+    "review": "A personalised playlist that partly borrows from etherelkgg’s “MICRO GOLD MINE” and with A1D’s contribution he has formulated a personal warmup routine. There is a heavy lean into target switching at the sacrifice of dynamic clicking to create an optimal playlist length of 11 mins. The lack of good dynamic clicking scenarios will make this personalised playlist extremely problematic for the average player using this to warm up."
+  }, {
+    "name": "pew pew yey x",
+    "creator": "etherelkgg",
+    "playlistLink": "KovaaKsBuyingNavyblueWipe",
+    "tier": "B",
+    "type": "Development",
+    "review": "The first ⅓ of the playlist is well-structured and transitions well between different aspects of aiming. But the latter ⅔ of the playlist starts to derail and feels like a shuffled playlist as you jump between scenarios with no connection from the previously played scenario."
+  } , {
+    "name": "Valorant AIMGOD Warmup",
+    "creator": "robbycantaim",
+    "playlistLink": "KovaaKsGearingClippyEngram",
+    "tier": "B",
+    "type": "Warmup",
+    "review": "A solid warmup that heavily emphasises the importance of horizontal dynamic clicking skills. The quality of the chosen scenarios is good and they emulate the situations of typical tacfps gunfight situations well. A major drawback is some scenarios need to differentiate themselves more to warrant a place in this lineup because they are wasteful to spend time playing."
+  }
+  
+  
+  ], 
+  "C-Tier": [{
+    "name": "okay yung coke tsaka JD minimix ko",
+    "creator": "etherelkgg",
+    "playlistLink": "KovaaKsWipingRareExitfrag",
+    "tier": "C",
+    "type": "Development",
+    "review": "The quality of some scenarios isn’t high enough to allow for deeper replayability, some scenarios are only good for a handful of runs and then there is no further value for developing your aim."
+  }, {
+    "name": "bardOZ Valorant",
+    "creator": "bardOZ",
+    "playlistLink": "KovaaKsTrackingJitteryLowground",
+    "tier": "C",
+    "type": "",
+    "review": "This is an old but standard playlist with all the essentials and covers pretty much everything you would want from a valorant playlist. However, the scenarios that play at a >180° fov are either unnecessary or replaceable with better alternatives. This is also a 40-minute playlist with every 4 repetitions per scenario being played 2 times on 2x sens, and another 2 times on normal sens."
+  }
+  
+  ], 
+  "D-Tier": [
+    {
       "name": "Kovaaks - VALORANT",
+      "creator": "Kovaaks",
       "playlistLink": "KovaaKsClippingBrownBottomfrag",
       "tier": "D",
-      "type": "Training",
-      "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient."
+      "type": "Development",
+      "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim concept, but not to the specific extent of 1:1 use in valorant. This means you will practise additional irrelevant aspects on top of the scenario's useful parts, making practice extremely inefficient."
     }, {
-      "name": "Kovaaks - VALORANT",
-      "playlistLink": "KovaaKsClippingBrownBottomfrag",
+      "name": "VALORANT - PureG [Warmup]",
+      "creator": "PureG",
+      "playlistLink": "KovaaKsHeadshottingSepiaDeathball",
       "tier": "D",
-      "type": "Training",
-      "review": "Most scenarios are not made specifically for valorant, so there are scenarios that cover a relevant aim mechanic, but not to the extent of direct use in valorant. This means you will be practising additional irrelevant aspects of aim mechanics making scenarios very inefficient."
-    }]
+      "type": "Warmup",
+      "review": "The structure of the playlist is logical and the spread of the types of scenarios is systematic, but this playlist doesn’t go further than a representation of aiming concepts used in valorant. Some scenario entries in this warmup promote the correct mechanics, but not to the same extent that is applied when you replicate those mouse movements in valorant."
+    }
+    ],
+  "E-Tier": [{
+    "name": "VALORANT - Freakazoid",
+    "creator": "Kovaaks",
+    "playlistLink": "KovaaKsBoomstickingJitteryDink",
+    "tier": "E",
+    "type": "Warmup",
+    "review": "This routine is basic and outdated, for each scenario there is a significantly better replacement that is more effective for warming up."
+  }, {
+    "name": "xset",
+    "creator": "zekken",
+    "playlistLink": "KovaaKsFeedingFraggedValue",
+    "tier": "E",
+    "type": "Warmup",
+    "review": "This routine is basic and also outdated, with the exception of “VoxTargetSwitch Click Small” There are better scenarios that achieve the same result and more for warming up for valorant."
+  }, {
+    "name": "PRX Something",
+    "creator": "Something",
+    "tier": "E",
+    "type": "Warmup",
+    "review": "There are too many static scenarios, and on top of that they are static scenarios that aren’t structured for tacfps aim. The extensive amount of static practice causes an extremely high amount of overlap of the mechanics between each scenario being practiced which makes the playlist very inefficient compared to a well-balanced playlist that covers multiple types of aiming."
+  }
+  ], "F-Tier": [{
+    "name": "Receptioncells - Tac-FPS dynamic",
+    "creator": "Receptioncells",
+    "playlistLink": "KovaaKsSnipingJunglegreenOptic",
+    "tier": "F",
+    "type": "Development",
+    "review": "This playlist composition of popular tacfps dynamic tasks with additional variations of those same scenarios, comes to a total playtime of 45mins. This routine is severely lacking in variety and is extremely bloated, even when shuffled this playlist provides poor value for time."
+  }]
+
+
 }
+ 
