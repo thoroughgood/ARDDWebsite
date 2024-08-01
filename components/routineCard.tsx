@@ -18,7 +18,8 @@ const bebas_neue = Bebas_Neue({
   weight: '400',
 });
 interface routineCardProps {
-  type: string;
+  game: string;
+  rating: string;
   link: string;
   title: string;
   creator: string;
@@ -27,7 +28,8 @@ interface routineCardProps {
   review: string;
 }
 export default function RoutineCard({
-  type,
+  game,
+  rating,
   link,
   title,
   creator,
@@ -44,7 +46,10 @@ export default function RoutineCard({
       icon: '😁'
       
     });
-  if (type === 'kovaaks') {
+    function createStars(rating: number): string {
+      return '★'.repeat(rating) + '☆'.repeat(5 - rating);
+    }
+    if (game === 'kovaaks') {
     return (
       <>
         <CopyToClipboard
@@ -67,41 +72,74 @@ export default function RoutineCard({
                 </div>
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
-                <div className="flex justify-between space-x-4 whitespace-pre-line">
-                {creator}{tier}{style}{review}
+                <div className="flex-col whitespace-pre-line text-start">
+                <div className="text-yellow-500 text-xl text-center">{createStars(parseInt(rating))}</div>
+                <div className="text-red-500 text-lg">Creator:</div> {creator}<br/><div className="text-red-500 text-lg">Tier:</div> {tier}<br/><div className="text-red-500 text-lg">Style:</div> {style}<br/><div className="text-red-500 text-lg">Review:</div> {review}
                   </div></HoverCardContent>
             </HoverCard>
           </Button>
         </CopyToClipboard>
       </>
     );
-  } else {
+  } else if (game === "aimlab") {
     return (
       <>
-          <Button className="p-0 h-auto">
+        <a href={`${link}`} target="_blank" rel="noopener noreferrer">
+          <Button className="p-1 h-auto">
             <HoverCard>
               <HoverCardTrigger
                 className={`z-10 rounded-xl h-12 text-2xl duration-150 px-6 py-2 text-white brightness-90 shadow-md shadow-black ease-in-out w-auto max-h-screen-lg bg-cyan-700 hover:shadow-[0px_0px_3px_3px_rgab(0,0,0)] border border-cyan-600 hover:scale-110 max-w-screen-lg hover:shadow-cyan-900 hover:bg-cyan-700`}
                 >
-                <Link href={`${link}`} passHref legacyBehavior>
-                  <a
-                    className={`${bebas_neue.className} px-1 flex flex-nowrap text- items-center tracking-normal`}
-                    target="_blank"
+                
+                  <div
+                    className={`${bebas_neue.className} px-3 flex flex-nowrap text- items-center tracking-normal`}
                   >
                     {title}
                     
                     {style === "Development" ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
                     
-                  </a>
-                </Link>
+                  </div>
               </HoverCardTrigger>
               <HoverCardContent className="w-80">
                 <div className="flex-col whitespace-pre-line text-start">
+                <div className="text-yellow-500 text-xl text-center">{createStars(parseInt(rating))}</div>
                 <div className="text-red-500 text-lg">Creator:</div> {creator}<br/><div className="text-red-500 text-lg">Tier:</div> {tier}<br/><div className="text-red-500 text-lg">Style:</div> {style}<br/><div className="text-red-500 text-lg">Review:</div> {review}
                   </div></HoverCardContent>
             </HoverCard>
           </Button>
+        </a>
       </>
     );
+  } else {
+    //games that are both kovaaks + aimlabs -> need to be able to copy on click and
+    return(
+    <>
+      <a href={`${link}`} target="_blank" rel="noopener noreferrer">
+          <Button className="p-1 h-auto">
+            <HoverCard>
+              <HoverCardTrigger
+                className={`z-10 rounded-xl h-12 text-2xl duration-150 px-6 py-2 text-white brightness-90 shadow-md shadow-black ease-in-out w-auto max-h-screen-lg hover:shadow-[0px_0px_3px_3px_rgab(0,0,0)] border hover:scale-110 max-w-screen-lg`} style={{ 
+                  background: `linear-gradient(144deg, rgba(14,116,144,1) 0%, rgba(14,116,144,1) 48%, rgba(180,83,9,1) 52%, rgba(180,83,9,1) 100%)` }}
+                >
+                
+                  <div
+                    className={`${bebas_neue.className} px-3 flex flex-nowrap text- items-center tracking-normal`}
+                  >
+                    {title}
+                    
+                    {style === "Development" ? <>&nbsp;💪</> : <>&nbsp;🎯</>}
+                    
+                  </div>
+              </HoverCardTrigger>
+              <HoverCardContent className="w-80">
+                <div className="flex-col whitespace-pre-line text-start">
+                <div className="text-yellow-500 text-xl text-center">{createStars(parseInt(rating))}</div>
+
+                <div className="text-red-500 text-lg">Creator:</div> {creator}<br/><div className="text-red-500 text-lg">Tier:</div> {tier}<br/><div className="text-red-500 text-lg">Style:</div> {style}<br/><div className="text-red-500 text-lg">Review:</div> {review}
+                  </div></HoverCardContent>
+            </HoverCard>
+          </Button>
+          </a>
+      </>)
   }
 }

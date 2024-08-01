@@ -43,6 +43,13 @@ export default function Home() {
               Aiming Guides{' '}
             </TopicButton>
             <TopicButton
+              onClick={() => setTopic('guides')}
+              isActive={topic === 'guides'}
+            >
+              {' '}
+              VT Amped{' '}
+            </TopicButton>
+            <TopicButton
               onClick={() => setTopic('rankings')}
               isActive={topic === 'rankings'}
             >
@@ -70,7 +77,8 @@ export default function Home() {
                     {data[category].map((item, index) => 
                     <RoutineCard key={index}
                       link={item.playlistLink}
-                      type=""
+                      game="aimlab"
+                      rating={item.rating}
                       title={item.name}
                       creator={item.creator}
                       tier={item.tier}
