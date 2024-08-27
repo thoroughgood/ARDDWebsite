@@ -11,8 +11,10 @@ import { Accordion } from '@/components/ui/accordion';
 import RankAccordion from '@/components/rankAccordion';
 import RoutineCard from '@/components/routineCard';
 import Background from '@/public/media/website.png';
+import Jett from '@/public/media/valorant-jett-abilities-kit-release.jpg';
 import ReactCard from '@/components/reactCardFlip';
-import data from '@/public/data.json'
+import data from '@/public/data.json';
+import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
   //Use state to manage what content is shown, routines by default
@@ -43,8 +45,8 @@ export default function Home() {
               Aiming Guides{' '}
             </TopicButton>
             <TopicButton
-              onClick={() => setTopic('guides')}
-              isActive={topic === 'guides'}
+              onClick={() => setTopic('amped')}
+              isActive={topic === 'amped'}
             >
               {' '}
               VT Amped{' '}
@@ -66,27 +68,32 @@ export default function Home() {
           {topic == 'routines' && (
             <>
               <div className="flex flex-col gap-5 flex-wrap pt-5">
-                {Object.keys(data).map((category) => 
-                <div key={category} className="flex-row">
-                  <Badge className="bg-white w-auto mb-4 max-h-12 ml-3">
-                    <h1 className="text-2xl font-bold text-red-500">
-                      {category}
-                    </h1>
-                  </Badge>
-                  <div className="flex flex-row flex-wrap gap-5">
-                    {data[category].map((item, index) => 
-                    <RoutineCard key={index}
-                      link={item.playlistLink}
-                      game="aimlab"
-                      rating={item.rating}
-                      title={item.name}
-                      creator={item.creator}
-                      tier={item.tier}
-                      style={item.type}
-                      review={item.review}/>
-                    )}
+                {Object.keys(data).map((category) => (
+                  <div key={category} className="flex-row">
+                    <Badge className="bg-gray-300 w-auto mb-4 max-h-12 ml-3">
+                      <h1 className="text-2xl font-bold text-red-500">
+                        {category}
+                      </h1>
+                    </Badge>
+                    <Fade triggerOnce="true">
+                      <div className="flex flex-row flex-wrap gap-5">
+                        {data[category].map((item, index) => (
+                          <RoutineCard
+                            key={index}
+                            link={item.playlistLink}
+                            game="kovaaks"
+                            rating={item.rating}
+                            title={item.name}
+                            creator={item.creator}
+                            tier={item.tier}
+                            style={item.type}
+                            review={item.review}
+                          />
+                        ))}
+                      </div>
+                    </Fade>
                   </div>
-                </div>)}
+                ))}
               </div>
             </>
           )}
@@ -160,6 +167,24 @@ export default function Home() {
                   description="Runner-Up for aimlabs skill tournament"
                 />
               </div>
+            </>
+          )}{' '}
+          {topic == 'amped' && (
+            <>
+              <Fade>
+                <div className="flex h-64 gap-24 justify-center">
+                  <img className="rounded-lg" src={Jett.src}></img>
+                  <div className="bg-gray-100/10 rounded-ss-3xl rounded-ee-3xl p-4">
+                    {/* change the font here to make it look nicer */}
+                    <div className="text-white text-2xl font-bold">
+                      TITLE
+                    </div>
+                    <div className="text-white text-xl font-bold ">
+                      test container klasmdalskdmaslkdm
+                    </div>
+                  </div>
+                </div>
+              </Fade>
             </>
           )}
         </div>
