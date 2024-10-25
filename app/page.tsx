@@ -15,6 +15,10 @@ import Jett from '@/public/media/valorant-jett-abilities-kit-release.jpg';
 import ReactCard from '@/components/reactCardFlip';
 import data from '@/public/data.json';
 import { Fade } from 'react-awesome-reveal';
+import localFont from 'next/font/local';
+import ampedBox from '@/components/ampedBox';
+
+const myFont = localFont({ src: './VeniteAdoremus-rgRBA.ttf' });
 
 export default function Home() {
   //Use state to manage what content is shown, routines by default
@@ -172,15 +176,20 @@ export default function Home() {
           {topic == 'amped' && (
             <>
               <Fade>
-                <div className="flex h-64 gap-24 justify-center">
+                <ampedBox>
+                  {' '}
                   <img className="rounded-lg" src={Jett.src}></img>
-                  <div className="bg-gray-100/10 rounded-ss-3xl rounded-ee-3xl p-4">
-                    {/* change the font here to make it look nicer */}
-                    <div className="text-white text-2xl font-bold">
-                      TITLE
-                    </div>
-                    <div className="text-white text-xl font-bold ">
-                      test container klasmdalskdmaslkdm
+                  <div className="text-white text-2xl font-bold">
+                    TITLE
+                  </div>
+                  <div className="text-white text-xl font-bold ">
+                    test container klasmdalskdmaslkdm
+                  </div>
+                </ampedBox>
+                <div className={myFont.className}>
+                  <div className="flex h-64 gap-16 justify-center">
+                    <div className="bg-gray-100/10 rounded-ss-3xl rounded-ee-3xl p-4">
+                      {/* change the font here to make it look nicer */}
                     </div>
                   </div>
                 </div>

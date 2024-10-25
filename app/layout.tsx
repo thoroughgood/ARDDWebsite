@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <Toaster/>
+        <Toaster />
         <div className="flex w-full justify-center text-4xl p-2 bg-black/50 shadow-md font-bold absolute z-50 inset-x-1 text-white">
           ARDD's Aim Guide
         </div>
